@@ -10,7 +10,6 @@ last_review: 2026-06-20
 confidence: High
 tags:
   - patterns
-  - patterns
   - constraint
   - networking
   - sync

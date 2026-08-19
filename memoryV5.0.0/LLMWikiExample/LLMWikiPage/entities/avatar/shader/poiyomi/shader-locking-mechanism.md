@@ -369,7 +369,7 @@ bool isLocked = ShaderOptimizer.IsLocked(myMaterial);
 - [[entities/avatar/shader/liltoon/color-settings]] §1.5 — LilToon HSVG 注意事项
 - [[entities/avatar/vrcfury-reference]] §4.1 — VRCFury Material Property Action
 - [[entities/avatar/avatar-optimizer]] — 工具链冲突
-- `../../../../../../（见源库 raw/ 目录）参考文献/23-04025/00-总文档-P等级评级.md` — 原始 P 等级评级
+- `源资料层笔记：《23-04025/00-总文档-P等级评级》` — 原始 P 等级评级
 
 ### 10.5 知识库整合来源
 - **本文档纳入来源**: 23-04025.md（VRCD 文档库 iconoclass 编写）处理后的 P1+P2 知识点

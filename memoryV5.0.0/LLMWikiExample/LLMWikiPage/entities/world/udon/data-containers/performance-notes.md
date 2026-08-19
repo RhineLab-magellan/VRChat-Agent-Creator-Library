@@ -485,7 +485,7 @@ for (int batch = 0; batch < 100; batch++) {
 ### 6.3 报告模板
 完成实测后,建议在 `performance-notes.md` 追加"§7. 实测数据"章节,格式:
 ```markdown
-## 7. 实测数据(待补充)
+## 7. 实测数据（模板示例——占位，非实测结果）
 
 > 测量环境: Unity 2022.3.22f1, VRChat SDK 3.10.x, ClientSim
 > 测量日期: YYYY-MM-DD

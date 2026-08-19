@@ -23,7 +23,7 @@ related:
   - ui.md
 type: entity
 created: 2026-06-04
-sources: "社区经验 + 项目实测 | https://docs.unity3d.com/2022.3/Documentation/Manual/class-Animator.html | memory/raw/参考文献/unityvrchat.md | https://creators.vrchat.com/avatars/playable-layers"
+sources: "社区经验 + 项目实测 | https://docs.unity3d.com/2022.3/Documentation/Manual/class-Animator.html | https://creators.vrchat.com/avatars/playable-layers"
 updated: 2026-08-17
 ---
 # API: Animator

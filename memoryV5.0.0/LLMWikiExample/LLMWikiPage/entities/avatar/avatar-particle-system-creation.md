@@ -400,7 +400,7 @@ Step 7: Bone Proxy 跟随 Head 骨
 - [L1 Unity 官方] Particle System Modules: https://docs.unity3d.com/2022.3/Documentation/Manual/ParticleSystemModules.html
 - [L1 Unity 官方] Standard Unlit Shader: https://docs.unity3d.com/2022.3/Documentation/Manual/shader-StandardUnlitParticles.html
 - [L1 官方] VRChat Avatar Particle System Limits: https://docs.vrchat.com/docs/avatar-particle-system-limits
-- 蒸馏产物: `../../../../（见源库 raw/ 目录）参考文献/笔记/avatar-video-consolidated-2026-07-04/KP04-Avatar粒子系统创建工作流.md`
+- 蒸馏产物: `源资料层笔记：《笔记/avatar-video-consolidated-2026-07-04/KP04-Avatar粒子系统创建工作流》`
 - 配套文档: `avatar-particle-system-limits.md`(限制端)
 
 ## §14 视频来源

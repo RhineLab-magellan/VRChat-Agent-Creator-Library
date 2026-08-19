@@ -159,7 +159,7 @@ Udon Graph Sidebar 顶部的搜索栏。
 
 | 问题 | 解决 |
 |------|------|
-| 找不到某个 API | 检查是否在白名单中(参见 `../../api/exposed-types.md` 与 `../../api/not-exposed.md`) |
+| 找不到某个 API | 检查是否在白名单中(参见 `` 与 ``) |
 | 搜索结果太多 | 用 `classname.methodname` 精确限定 |
 | 不知道从哪个类找 | 用 Full Search 配合方法名 |
 
@@ -172,8 +172,8 @@ Udon Graph Sidebar 顶部的搜索栏。
 - [`graph-elements.md`](graph-elements.md) — Graph 元素
 - [`special-nodes.md`](special-nodes.md) — 特殊节点
 - [`type-nodes.md`](type-nodes.md) — 类型引用节点
-- `../../api/exposed-types.md` — 已暴露类型详细清单
-- `../../api/not-exposed.md` — 未暴露 API 黑名单
+- `` — 已暴露类型详细清单
+- `` — 未暴露 API 黑名单
 
 ---
 

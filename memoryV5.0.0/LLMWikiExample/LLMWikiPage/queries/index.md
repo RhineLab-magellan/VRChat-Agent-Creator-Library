@@ -34,7 +34,13 @@ updated: 2026-08-09
 
 ## 已归档查询
 
-（暂无。首次优质查询回答后在此登记。）
+| 日期 | 问题 | 答案入口 | 综合度 |
+|------|------|----------|--------|
+| 2026-07 | Avatar Shader 怎么选：lilToon / Poiyomi / SCSS / ORL / Filamented / UnlitWF？ | [[../entities/avatar/shader/index.md]] | 多页对比 |
+| 2026-07 | Poiyomi Pro 与 Poiyomi Toon 选哪个？ | [[../comparisons/poiyomi-pro-vs-toon.md]] | 对比结论 |
+| 2026-07 | Filamented / ORL / lilToon 功能差异矩阵？ | [[../comparisons/filamented-comparison.md]] · [[../comparisons/orl-comparison.md]] | 多页矩阵 |
+| 2026-06 | UdonSharp 能否使用 List / Dictionary 等集合类型？ | [[../concepts/rules/udonsharp-language-limits.md]] | 规则速查 |
+| 2026-06 | 世界持久化数据如何设计方案？ | [[../entities/world/udon/persistence/index.md]] | 架构综合 |
 
 ## 维护规则
 

@@ -43,6 +43,8 @@ updated: 2026-06-21
 | peppermint | ✅ 基础 | VRChat 专用精简 | 低 | Light Volumes | 一般 |
 | GeenzShade | ❌ | glTF 兼容 | 中 | Light Volumes | 活跃 |
 
+> 注：本页对比矩阵中"功能可达性"行均为**引擎功能断言**（可查证）；列级来源见「相关参考」（下方表格）。暂未逐格标注 [FACT]/[INFERENCE]，逐格来源标注列为后续评审待提升项。
+
 ## 二、功能特性对比
 
 ### 2.1 核心 PBR 特性
@@ -155,12 +157,9 @@ updated: 2026-06-21
 ### 知识库索引
 
 ```
-memory/
-├── avatar/shader/           # Avatar Shader 知识
-│   ├── liltoon/            # lilToon（动漫风格）
-│   ├── scss/              # SCSS（双阴影系统）
-│   └── filamented/        # Filamented（PBR 质量）
-└── world/                 # World 相关知识
+LLMWikiPage/
+├── entities/avatar/shader/     # Avatar Shader 知识（liltoon / orl / poiyomi / filamented / unlitwf）
+└── comparisons/                # 跨实体对比（本页；另见 orl-comparison / poiyomi-vs-liltoon）
 ```
 
 ### 相关参考

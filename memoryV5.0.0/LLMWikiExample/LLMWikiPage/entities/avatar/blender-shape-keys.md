@@ -300,7 +300,7 @@ public class BlendShapeController : MonoBehaviour
 - [[entities/avatar/avatar-modding-guide]] — Avatar 改模指南
 - [[entities/avatar/modular-avatar]] — Modular Avatar (MA)
 - [[entities/platform/unity-recorder]] — Unity Recorder(用于截图 BlendShape 效果)
-- `（见源库 sources/ 目录）vrcfury-reference.md` — VRCFury(可自动处理 Merge SkinnedMesh)
+- `源资料层《vrcfury-reference》（归档层，不随发布包分发）` — VRCFury(可自动处理 Merge SkinnedMesh)
 
 ---
 

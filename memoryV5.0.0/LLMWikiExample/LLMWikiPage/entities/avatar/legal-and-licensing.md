@@ -37,7 +37,7 @@ updated: 2026-07-04
 
 ## 1. 风险等级总览
 
-> ⚠️ 本页混合了 `VN3`、86vrchat 社区总结与个案转述。**涉及具体使用边界时，应优先回到商品附带许可与 `sources/vn3-license.md`，不要把社区总结直接等同于普遍法律定论。**
+> ⚠️ 本页混合了 `VN3`、86vrchat 社区总结与个案转述。**涉及具体使用边界时，应优先回到商品附带许可与 `源资料层《vn3-license》`，不要把社区总结直接等同于普遍法律定论。**
 
 **[COMMUNITY-86vrchat]** VRCD/booth 量贩模型法律红线:
 (来源: https://docs.vrcd.org.cn/books/86vrchat)
@@ -92,7 +92,7 @@ updated: 2026-07-04
 
 ## 5. 关联文档
 
-- `sources/vn3-license.md` — VN3 协议详解
+- `源资料层《vn3-license》` — VN3 协议详解
 - `avatar/public-avatar-cloning.md` — Public Avatar 限制
 - `avatar/commission-pricing.md` — 委托价格区间
 

@@ -28,6 +28,8 @@ updated: 2026-06-20
 ---
 # Editor Systems
 
+> ⚠️ **规划清单**：下表各"待补充(`xxx.md`)"为**尚未建设**的目标组件页，反引号文件名仅供规划占位，并非可用链接；对应知识将在后续内容周期补齐。
+
 These systems help set things up in the Unity Editor.
 
 ---

@@ -3,7 +3,7 @@ title: "NOT EXPOSED API 黑名单 - VRChat SDK 3.10.3"
 category: api
 knowledge_level: core
 status: active
-source: "`../../../../memory/raw/参考文献/UdonTypeExposure.txt` 解析"
+source: "https://github.com/vrchat-community/UdonSharp/wiki/class-exposure-tree 解析"
 source_type: community
 version: 1.0
 last_review: 2026-06-11
@@ -23,7 +23,7 @@ related:
   - ../../concepts/rules/udonsharp-language-limits.md
 type: entity
 created: 2026-06-11
-sources: "`../../../../memory/raw/参考文献/UdonTypeExposure.txt` 解析"
+sources: "https://github.com/vrchat-community/UdonSharp/wiki/class-exposure-tree 解析"
 updated: 2026-06-11
 ---
 # NOT EXPOSED API 黑名单 - VRChat SDK 3.10.3

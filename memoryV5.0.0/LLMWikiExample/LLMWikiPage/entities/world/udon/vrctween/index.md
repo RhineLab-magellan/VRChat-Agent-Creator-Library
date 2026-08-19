@@ -196,8 +196,8 @@ VRCTween 是 VRChat 团队对 **DOTween** 库 (Demigiant, http://dotween.demigia
 
 | 文档 | 路径 | 用途 |
 |---|---|---|
-| 4 份 VRCTween 官方原始英文 | `../../../../../../（见源库 raw/ 目录）参考文献/VRCTween-Official-{Overview,Tween-Types,Virtual-Tweens,Settings}.md` | 2026-05-28 官方版本,本地化前的原始材料 |
-| DOTween 底层库介绍 | `../../../../../../（见源库 raw/ 目录）参考文献/DOTween-Underlying-Engine.md` | DOTween 性能基准、平台支持、设计哲学 |
+| 4 份 VRCTween 官方原始英文 | `源资料层笔记：《VRCTween-Official-{Overview,Tween-Types,Virtual-Tweens,Settings}》` | 2026-05-28 官方版本,本地化前的原始材料 |
+| DOTween 底层库介绍 | `源资料层笔记：《DOTween-Underlying-Engine》` | DOTween 性能基准、平台支持、设计哲学 |
 | 缓动可视化 | https://easings.net/ | 31 种 ease 曲线视觉对比 |
 | VRChat Canny | https://vrchat.canny.io/udon | VRCTween 相关 Bug 报告 / 功能请求 |
 

@@ -269,7 +269,7 @@ Tracking 已并入 Avatar↔World 观察层 / External Integration 仍待建设
 | **Udon Persistence 实战** | [[entities/world/udon/persistence/index]] ⭐ 8 文档(PlayerData/PlayerObject/100KB/3 模式)NEW 2026-06-21 |
 | **Udon VM 字节码** | `entities/world/udon/vm-and-assembly.md` 9 Opcodes 官方规范 |
 | **VRCTween(官方补间)** | `entities/world/udon/vrctween/index.md` ⭐ DOTween 封装,7 大类补间 + 虚拟补间 + 复用模式 ⭐NEW 2026-06-21 (2026-06-22 已校验与官方 5-28 一致) |
-| **VRCTween 原始英文 / DOTween 底层** | `raw/参考文献/VRCTween-Official-*.md` + `raw/参考文献/DOTween-Underlying-Engine.md` ← 5 份原始快照(2026-06-22 抓取) |
+| **VRCTween 原始英文 / DOTween 底层** | VRCTween 官方原始快照（源资料层，不随发布包分发）(2026-06-22 抓取) |
 | World 设计模式 | [[concepts/patterns/index]] ⭐ 31 个(7 原有 + 6 LuraSwitch2 + 10 UVU + 5 ULocalization 沙箱适配 + 3 Sardinal 独有) |
 | **Master-Follower Syncer** | `concepts/patterns/master-follower-syncer.md` ⭐NEW |
 | **Exclusive Control Selector** | `concepts/patterns/exclusive-control-selector.md` ⭐NEW |
@@ -296,7 +296,7 @@ Tracking 已并入 Avatar↔World 观察层 / External Integration 仍待建设
 | **Channel-Based Pub/Sub Routing** | `concepts/patterns/channel-routing.md` ⭐NEW 2026-06-20 (Sardinal 独有) |
 | **Inherited Subscriber** | `concepts/patterns/inherited-subscriber.md` ⭐NEW 2026-06-20 (Sardinal 独有) |
 | **Hybrid Static+Dynamic Subscription** | `concepts/patterns/hybrid-subscription-modes.md` ⭐NEW 2026-06-20 (Sardinal 独有) |
-| World 审查 | （见源库 reviews/ 目录） |
+| World 审查 | 源资料归档层（不随发布包分发） |
 | **光照系统** | `entities/world/vrc-light-volumes.md` |
 | **光照烘焙** | `entities/world/bakery/light-baking-guide.md` |
 | **遮挡剔除** | `entities/world/occlusion-culling-guide.md` |
@@ -363,4 +363,4 @@ Tracking 已并入 Avatar↔World 观察层 / External Integration 仍待建设
 - VRCLens 修复 Avatar 相机 DepthTextureMode 失效问题（Canny tracked）
 - VirtualLens2 提供 Remote Only Mode 优化 Android 移动平台部署
 - VRChat 原相机景深错误是官方已知问题（详见 `entities/world/vrc-camera-settings.md` §Avatar 相机限制）
-| 文档对比记录 | （见源库 references/ 目录） ⭐NEW 2026-06-15 域索引 |
+| 文档对比记录 | 源资料归档层（不随发布包分发） ⭐NEW 2026-06-15 域索引 |

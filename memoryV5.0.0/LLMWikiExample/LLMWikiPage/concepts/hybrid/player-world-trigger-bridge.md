@@ -262,8 +262,8 @@ updated: 2026-07-12
 
 - `avatar-world-boundaries.md`
 - `player-observation-boundaries.md`
-- `../world/udon/players/player-collisions.md`
-- `../api/player-api.md`
+- ``
+- ``
 
 ---
 

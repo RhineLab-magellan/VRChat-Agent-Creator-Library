@@ -248,7 +248,7 @@ Udon 中所有"Event" 类别节点的清单。脚本通过 Event 监听行为并
 - [`index.md`](index.md) — Udon Node Graph 主页
 - [`graph-elements.md`](graph-elements.md) — Graph 元素
 - [`special-nodes.md`](special-nodes.md) — 特殊节点(含 OnVariableChanged)
-- `../../api/events-reference.md` — Udon 事件完整参考
+- `` — Udon 事件完整参考
 - `../udonsharp/` — UdonSharp C# 入口
 
 ---

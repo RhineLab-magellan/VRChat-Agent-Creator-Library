@@ -78,7 +78,7 @@ Poiyomi Shaders 是 VRChat 改模界主流的 Toon Shader,与 lilToon 并列第�
 > ⚠️ **国内访问警告**: Poiyomi VPM 在 `vcc.vrczh.org` 镜像站**同步失败**(2026-07-01 状态)。建议:
 > 1. 直连 `https://poiyomi.github.io/vpm/index.json`
 > 2. 或使用 ALCOM 内置源
-> 3. 详见 `sources/vpm-mirrors/samples/poiyomi.md`
+> 3. 详见 `源资料层《vpm-mirrors/samples/poiyomi》`
 
 ### 3.2 手动安装(替代方案)
 
@@ -245,7 +245,7 @@ Patreon $10+/月订阅
 | **Poiyomi Download & Install 原文** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
 | **VPM 包元数据** | [Poiyomi 官方](https://poiyomi.com/) |
 | **5 变体详解** | `./shader-variants.md` |
-| **Pro vs Toon 详解** | `./pro-vs-toon.md` |
+| **Pro vs Toon 详解** | `../../../../comparisons/poiyomi-pro-vs-toon.md` |
 | **Poiyomi 主索引** | `./index.md` |
 
 ---

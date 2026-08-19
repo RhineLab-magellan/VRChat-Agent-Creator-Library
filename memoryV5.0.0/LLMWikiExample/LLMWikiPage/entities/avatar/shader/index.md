@@ -23,8 +23,8 @@ aliases:
 related:
   - other-shaders.md
   - scss.md
-  - ../../../orl/comparison.md
-  - ../../../poiyomi/comparison-liltoon.md
+  - "[../../../comparisons/orl-comparison.md]"
+  - "[../../../comparisons/poiyomi-vs-liltoon.md]"
   - ../../../poiyomi/index.md
 type: entity
 created: 2026-07-04
@@ -135,12 +135,12 @@ avatar/shader/
 │   ├── overview.md           ← 项目概览与安装
 │   ├── shader-list.md        ← 详细 Shader 列表
 │   ├── configurable.md       ← Configurable 模块化系统
-│   └── comparison.md         ← 与其他 Shader 对比
+│   └── 对比 → comparisons/orl-comparison.md
 ├── filamented/                ← Filamented（Google Filament PBR 替代）
 │   ├── index.md              ← Filamented 总览
 │   ├── overview.md           ← 项目概览
 │   ├── pbr-improvements.md   ← PBR 改进详解
-│   └── comparison.md         ← 与同类项目对比
+│   └── 对比 → comparisons/filamented-comparison.md
 │
 ├── 🔧 通用（Avatar + World）
 ├── unlitwf/                   ← UnlitWF（Unlit 扩展专业效果）
@@ -585,15 +585,15 @@ struct drawing {
 
 | Shader | 文档状态 | 分析完成度 |
 |--------|----------|-----------|
-| **lilToon** | ✅ 完整(16个文件) | 100% |
-| **Poiyomi** | ✅ 完整(65个文件)⭐2026-07-01 完成 | 100% |
+| **lilToon** | ✅ 完整(17个文件) | 100% |
+| **Poiyomi** | ✅ 完整(8个文件本地，覆盖官方 65 文档)⭐2026-07-01 | 100% |
 | **SCSS** | ✅ 完整(1个文件 + 详细分析) | 100% |
 | **ORL Shaders** | ✅ 完整(4个文件) | 100% |
-| **Filamented** | ✅ 完整(4个文件) | 100% |
+| **Filamented** | ✅ 完整(3个文件) | 100% |
 | **UnlitWF** | ✅ 完整(1个文件 + 详细分析) | 100% |
-| **z3y/shaders** | ⚠️ 待补充 | 引用但未详细分析 |
-| **GeneLit** | ⚠️ 待补充 | 引用但未详细分析 |
-| **Graphlit** | ⚠️ 待补充 | 引用但未详细分析 |
+| **z3y/shaders** | ✅ 对比已覆盖 | 功能矩阵见 [[../../../comparisons/filamented-comparison]] |
+| **GeneLit** | ✅ 对比已覆盖 | 功能矩阵见 [[../../../comparisons/filamented-comparison]] |
+| **Graphlit** | ✅ 对比已覆盖 | 功能矩阵见 [[../../../comparisons/filamented-comparison]] |
 | **Toon Standard** | ⚠️ 仅有 RenderType=Opaque 变更记录(2026-02-19) | 官方默认,无详细配置文档 |
 
 ---

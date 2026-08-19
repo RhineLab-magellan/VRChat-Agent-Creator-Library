@@ -252,9 +252,9 @@ updated: 2026-06-20
 
 | 主题 | 相关文档 |
 |------|---------|
-| **VRCPlayerApi 完整 API** | `../../api/exposed-types.md` |
-| **未暴露 API 黑名单** | `../../api/not-exposed.md` |
-| **Networking 完整规范** | `../../api/networking.md` |
+| **VRCPlayerApi 完整 API** | `` |
+| **未暴露 API 黑名单** | `` |
+| **Networking 完整规范** | `` |
 | **MIDI 事件** | 本知识库未收录,【未确认】是否在 MIDI 组件页 |
 | **Ownership 事件** | 本知识库未收录,【未确认】是否在 Ownership 组件页 |
 
@@ -282,8 +282,8 @@ updated: 2026-06-20
 - [`graph-elements.md`](graph-elements.md) — Graph 元素
 - [`searching-for-nodes.md`](searching-for-nodes.md) — 节点搜索
 - [`special-nodes.md`](special-nodes.md) — 特殊节点
-- `../../api/exposed-types.md` — 已暴露类型详细清单
-- `../../api/not-exposed.md` — 未暴露 API 黑名单
+- `` — 已暴露类型详细清单
+- `` — 未暴露 API 黑名单
 
 ---
 

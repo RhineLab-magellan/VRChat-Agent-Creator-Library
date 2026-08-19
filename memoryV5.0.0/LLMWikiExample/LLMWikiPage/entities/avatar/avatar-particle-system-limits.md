@@ -157,7 +157,7 @@ effective_max = ps_max_particles
 ```
 
 实际 Windows 路径:
-- `C:\Users\<Username>\AppData\LocalLow\VRChat\vrchat\config.json`
+- `<用户目录>\AppData\LocalLow\VRChat\vrchat\config.json`
 
 ### 5.2 ⚠️ 需重启
 

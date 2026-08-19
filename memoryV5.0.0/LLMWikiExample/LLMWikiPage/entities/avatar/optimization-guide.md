@@ -286,7 +286,7 @@ updated: 2026-07-04
 | 1024 | 7.8MB | **0.5MB** |
 | 512  | 7.8MB | **128KB** |
 
-> 💡 **关键**: VRChat 官方明确 "**Each step of texture resolution increases memory/filesize by 400%!**"
+> 💡 **关键**: VRChat 官方明确 "**Each step of texture resolution increases memory & filesize by 400%!**"
 
 #### Format（格式）
 

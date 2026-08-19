@@ -224,4 +224,4 @@ Graph **自动在后台以固定间隔编译**:
 - `special-nodes.md` — 特殊节点(Block/Branch/Loop/ForEach/...)
 - `type-nodes.md` — 类型引用节点
 - `../udonsharp/` — C# 入口
-- `../../api/events-reference.md` — Udon 事件完整参考
+- `` — Udon 事件完整参考

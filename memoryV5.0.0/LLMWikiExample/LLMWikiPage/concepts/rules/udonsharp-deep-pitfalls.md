@@ -10,7 +10,6 @@ last_review: 2026-06-20
 confidence: High
 tags:
   - rules
-  - rules
   - udonsharp
   - avatar
 aliases:
@@ -44,7 +43,7 @@ Mono 对非 ASCII 字符串编码支持有历史 bug（如 mono/mono#20968, mono
 - 字符串转换异常
 
 ### Fix
-确保路径只含 ASCII 字符，如 `C:\Projects\MyVRCAvatarWorld\`。
+确保路径只含 ASCII 字符，如 `<盘符>:\Projects\MyVRCAvatarWorld\`。
 
 ---
 

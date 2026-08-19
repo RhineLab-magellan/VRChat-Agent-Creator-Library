@@ -155,7 +155,7 @@ to restart Unity without administrator privileges.
 **步骤**:
 
 1. 找到 `Unity.exe` (或 `Unity Hub.exe`)
-   - 通常在 `C:\Program Files\Unity\Hub\Editor\2022.3.22f1\Editor\Unity.exe`
+   - 通常在 `<安装盘>:\Program Files\Unity\Hub\Editor\2022.3.22f1\Editor\Unity.exe`
 2. **右键** → `属性` → `兼容性` 选项卡
 3. **取消勾选** "以管理员身份运行此程序"
 4. 同时检查: `更改所有用户的设置` → 同样取消勾选

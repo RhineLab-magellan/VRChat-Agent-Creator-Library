@@ -3,8 +3,8 @@ title: "VRChat API 参考 - 好友模块"
 category: vrchatsdk
 knowledge_level: applied
 status: active
-source: 本地知识库整理
-source_type: community
+source: https://vrchat.hexdocs.pm/VRChat.Friends.html
+source_type: official
 version: 1.0
 last_review: 2026-06-20
 confidence: Medium
@@ -23,14 +23,12 @@ related:
   - api-instances.md
 type: entity
 created: 2026-06-20
-sources: 本地知识库整理
+sources: https://vrchat.hexdocs.pm/VRChat.Friends.html
 updated: 2026-06-20
 ---
----
-source: https://vrchat.hexdocs.pm/VRChat.Friends.html
-date: 2026-06-10
-SDK版本: vrchat v1.20.0 (Elixir)
----
+> 自动生成文档数据：source: https://vrchat.hexdocs.pm/VRChat.Friends.html；date: 2026-06-10；SDK版本: vrchat v1.20.0 (Elixir)
+>
+
 
 # VRChat API 参考 - 好友模块
 

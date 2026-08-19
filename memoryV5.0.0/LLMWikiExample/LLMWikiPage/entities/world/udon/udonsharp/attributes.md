@@ -76,7 +76,7 @@ updated: 2026-06-20
 
 **用途**：标记字段在网络上**为所有玩家同步**。
 
-**【FACT】** 详细同步机制见 [[entities/api/networking]]](../../../api/networking.md)。
+**【FACT】** 详细同步机制见 [[entities/api/networking]]。
 
 ### 2.2 示例
 
@@ -167,7 +167,7 @@ public class Example : UdonSharpBehaviour
 └─ 不确定 → 用 Any（默认），后期收紧
 ```
 
-> **【R-HIGH】** `None` 模式**无法**使用 `SendCustomNetworkEvent` 或 `NetworkCallable`，是常见踩坑点。详见 [[entities/api/networking]]](../../../api/networking.md)。
+> **【R-HIGH】** `None` 模式**无法**使用 `SendCustomNetworkEvent` 或 `NetworkCallable`，是常见踩坑点。详见 [[entities/api/networking]]。
 
 ---
 

@@ -165,7 +165,7 @@ Poiyomi 有**两套独立包**:
 
 ## 5. 鉴权流程
 
-> 详见 `./installation.md` §5
+> 详见 [[../entities/avatar/shader/poiyomi/installation.md]] §5
 
 ```
 Patreon $10+/月订阅
@@ -278,10 +278,10 @@ Poiyomi Toon Micro (免费) ← Quest 首选
 |----------|------|
 | **Poiyomi Introduction 原文** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
 | **Poiyomi Download & Install** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
-| **Poiyomi Modular System** | `./modular-system.md` |
-| **Poiyomi Shader Variants** | `./shader-variants.md` |
+| **Poiyomi Modular System** | [[../entities/avatar/shader/poiyomi/modular-system.md]] |
+| **Poiyomi Shader Variants** | [[../entities/avatar/shader/poiyomi/shader-variants.md]] |
 | **VPM 包元数据(含 Patreon 鉴权)** | [Poiyomi 官方](https://poiyomi.com/) |
-| **Poiyomi 主索引** | `./index.md` |
+| **Poiyomi 主索引** | [[../entities/avatar/shader/poiyomi/index.md]] |
 
 ---
 
@@ -293,8 +293,6 @@ Poiyomi Toon Micro (免费) ← Quest 首选
 | **创建日期** | 2026-07-01 |
 | **上游版本** | Poiyomi 10.0 |
 | **Pro 价格** | Patreon $10/月起 |
-| **评审状态** | Stage 2.7 完成 |
-| **下一步** | Stage 2.8 LilToon 对比 + Stage 3 路由 |
 
 ---
 

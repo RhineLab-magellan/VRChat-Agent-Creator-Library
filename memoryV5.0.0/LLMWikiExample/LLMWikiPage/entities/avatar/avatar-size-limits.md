@@ -254,7 +254,7 @@ updated: 2026-07-04
 ### 5.2 社区来源
 
 - [VRCD 18-vrchat-CI4](https://docs.vrcd.org.cn/books/vrchat-CI4) — 如何压缩您的 VRChat 模型大小
-- VRCD 18-vrchat-CI4 知识整理笔记（来源引证文件：本机 memory/raw/参考文献/18-vrchat-CI4-notes/00-SUMMARY.md —— 未随发布包分发）
+- VRCD 18-vrchat-CI4 知识整理笔记（来源引证：VRCD 18-vrchat-CI4 知识整理笔记——源引文件不随发布包分发）
 
 ### 5.3 知识库内部
 

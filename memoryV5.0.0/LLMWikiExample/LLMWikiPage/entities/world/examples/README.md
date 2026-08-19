@@ -111,7 +111,7 @@ updated: 2026-06-20
 
 ## 与其他知识库的关系
 
-- **`sources/example-central.md`**:VRChat 官方 Example Central 一站式获取工具,与本目录互为补充
+- **`源资料层《example-central》`**:VRChat 官方 Example Central 一站式获取工具,与本目录互为补充
 - **`world/clientsim/`**:Editor 内模拟 VRChat 客户端(World 测试工具)
 - **`platform/easyquestswitch.md`**:PC/Quest 平台切换自动化
 - **`world/udon/udonsharp/compilation.md`**:UdonSharp 编译管线(原 `world/udonsharp-compilation.md` 已迁移并删除)

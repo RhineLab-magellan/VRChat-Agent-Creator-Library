@@ -80,13 +80,13 @@ updated: 2026-06-21
 |------|------|
 | **触发场景** | 代码审查、性能审计、资源审查、安全评估 |
 | **输出格式** | 严重度分级（P0/P1/P2）→ 具体问题 → 修复建议 |
-| **核心知识** | （见源库 reviews/ 目录） [[concepts/rules/index]] |
+| **核心知识** | 源资料归档层（不随发布包分发） [[concepts/rules/index]] |
 
 ### UdonSharp Review Protocol (8 Steps)
 
 1. 功能定位 → 2. 生命周期 → 3. 数据结构 → 4. Networking → 5. 性能 → 6. 稳定性 → 7. 架构评价 → 8. 优化建议(高/中/低)
 
-**审查前必读**：`reviews/review-checklist.md` + `reviews/common-failures.md`（32+ FAIL 案例）
+**审查前必读**：`审查归档《review-checklist》` + `审查归档《common-failures》`（32+ FAIL 案例）
 
 ### 性能审计五维分析
 
@@ -126,7 +126,7 @@ updated: 2026-06-21
 |------|------|
 | **触发场景** | 案例研究匹配、模式检索、插件评估、知识检索 |
 | **输出格式** | 双重身份分析（A 案例 + C 工具）、VPM 安装指引、模式匹配报告 |
-| **核心知识** | （见源库 sources/ 目录） [[concepts/patterns/index]] [[concepts/hybrid/udon-world-plugins]] |
+| **核心知识** | 源资料归档层（不随发布包分发） [[concepts/patterns/index]] [[concepts/hybrid/udon-world-plugins]] |
 
 ### 双重身份方法论
 

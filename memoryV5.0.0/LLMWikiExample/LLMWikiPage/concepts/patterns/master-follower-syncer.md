@@ -210,7 +210,7 @@ s.ApplyValueFromExternalWithTimeVisualOnly(v, ..., sliderSyncInterpolationTime);
 
 ## Reference Implementation
 
-`../参考工程/QuickBrown/LuraSwitch2/02_CORE/01_Switch/SCRIPT/SwitchSyncer.cs` (736 行)
+`LuraSwitch2 参考工程源码《SwitchSyncer.cs》（外部样例，不随发布包分发）` (736 行)
 
 ---
 

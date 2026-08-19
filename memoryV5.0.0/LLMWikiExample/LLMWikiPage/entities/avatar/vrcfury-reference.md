@@ -1039,4 +1039,4 @@ VRCFury 官方仓库 ID：`com.vrcfury.vcc`，包名：`com.vrcfury.vrcfury`。
 
 ## 相关页面
 
-[[ma-component-cards.md]] · [[ma2bt.md]] · [[modular-avatar.md]] · [[ndmf-tools.md]] · [[avatar-dynamic-bone-limits.md]] · [VRC-Avatar-Performance-Tools（GitHub）](https://github.com/Thryrallo/VRC-Avatar-Performance-Tools) · （见源库 raw/ 目录）
+[[ma-component-cards.md]] · [[ma2bt.md]] · [[modular-avatar.md]] · [[ndmf-tools.md]] · [[avatar-dynamic-bone-limits.md]] · [VRC-Avatar-Performance-Tools（GitHub）](https://github.com/Thryrallo/VRC-Avatar-Performance-Tools) · 源资料层（原始归档，不随发布包分发）

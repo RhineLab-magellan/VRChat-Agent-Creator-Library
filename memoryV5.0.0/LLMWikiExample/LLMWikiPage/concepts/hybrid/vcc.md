@@ -213,14 +213,14 @@ VRChat 官方包的准语义化版本：`{Branding}.{Breaking}.{Bumps}`
 
 ## 6. 已知问题
 
-> ⚠️ **社区层补充**: 中国大陆社区长期存在 patcher / mirror / 加速类 workaround，用于改善下载可达性；这些方案不属于 VCC 官方主干，应与本页的官方结论分开看待。具体步骤优先留在 `sources/vcc.md` 或参考层文档。
+> ⚠️ **社区层补充**: 中国大陆社区长期存在 patcher / mirror / 加速类 workaround，用于改善下载可达性；这些方案不属于 VCC 官方主干，应与本页的官方结论分开看待。具体步骤优先留在 `源资料层《vcc》` 或参考层文档。
 
 | 问题 | 严重度 | 来源 | 状态 |
 |------|--------|------|------|
 | **"Failed to add Repo" 误报** | 🟡 中等 | `modular-avatar.md §8.2` | VCC 已知 bug，99% 情况仓库已成功添加，点 Cancel 即可 |
 | **Pre-release 依赖解析 bug** | 🟡 中等 | `modular-avatar.md` | MA 预发布版在 VCC 中依赖解析失败，建议用 ALCOM |
 | **WebView2 白屏** | 🔴 严重 | FAQ | 重装 WebView2 或用 `http://localhost:5476/` 浏览器访问 |
-| **长路径导致包丢失** | 🟡 中等 | FAQ | Windows 路径过长，建议 `C:\Projects\` 短路径或启用 Win32 长路径 |
+| **长路径导致包丢失** | 🟡 中等 | FAQ | Windows 路径过长，建议 `<盘符>:\Projects\` 短路径或启用 Win32 长路径 |
 | **settings.json 损坏** | 🔴 严重 | FAQ | 删除 `%LocalAppData%\VRChatCreatorCompanion\settings.json` 后重启 VCC |
 
 ---
@@ -338,4 +338,4 @@ vpm install unity                    # 安装兼容的 Unity 版本
 
 ## 相关页面
 
-[[alcom.md]] · （见源库 raw/ 目录） · [[audio-link.md]] · [[osc-protocol.md]] · [[udon-world-plugins.md]]
+[[alcom.md]] · 源资料层（原始归档，不随发布包分发） · [[audio-link.md]] · [[osc-protocol.md]] · [[udon-world-plugins.md]]

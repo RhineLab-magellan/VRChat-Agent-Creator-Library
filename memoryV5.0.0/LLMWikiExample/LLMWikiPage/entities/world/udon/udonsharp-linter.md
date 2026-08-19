@@ -71,8 +71,8 @@ updated: 2026-08-13
 
 ## 5. 与本地规则页的关系
 
-本页是工具实体入口；`../../../rules/udonsharp-language-limits.md` 描述规则本身，`../../../api/not-exposed.md` 描述 API 暴露边界。三者不能互相替代。
+本页是工具实体入口；`../../../concepts/rules/udonsharp-language-limits.md` 描述规则本身，`../../../entities/api/not-exposed.md` 描述 API 暴露边界。三者不能互相替代。
 
 ## 相关页面
 
-[[index.md]] · [[../../../concepts/rules/udonsharp-language-limits.md]] · [[../../api/not-exposed.md]] · [[../../../concepts/rules/runtime-texture-compression.md]]
+[[index.md]] · [[../../../concepts/rules/udonsharp-language-limits.md]] · [[../../../entities/api/not-exposed.md]] · [[../../../concepts/rules/runtime-texture-compression.md]]

@@ -64,7 +64,7 @@ updated: 2026-07-04
 | **[[concepts/patterns/index]]** | 跨域通用 (Networking / Persistence / Data) | 通用基础 |
 | **[[entities/world/patterns/index]]** (本目录) | World 域特定 (UI / Player / Scene) | 领域应用 |
 | **[[entities/world/udon/index]]** | Udon 官方文档本地化 | 底层 API |
-| **（见源库 sources/ 目录）** | 优秀开源项目模式提炼 | 案例参考 |
+| **源资料归档层（不随发布包分发）** | 优秀开源项目模式提炼 | 案例参考 |
 
 ---
 

@@ -257,7 +257,7 @@ Patreon $10+/月 → Discord 绑定 → #pro-downloads 下载 → Import 到 Uni
 | **VPM 包元数据** | [Poiyomi 官方](https://poiyomi.com/) |
 | **Avatar Shader 主索引** | `../index.md` |
 | **lilToon 知识库** | `../liltoon/index.md` |
-| **SCSS 知识库** | `../scss.md` |
+| **SCSS 知识库** | `` |
 | **Avatar 性能等级** | [[entities/avatar/performance-rank]] |
 | **Avatar 优化指南** | [[entities/avatar/optimization-guide]] |
 

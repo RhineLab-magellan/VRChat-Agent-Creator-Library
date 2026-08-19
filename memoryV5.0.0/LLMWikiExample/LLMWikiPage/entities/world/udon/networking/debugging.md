@@ -438,7 +438,7 @@ VRChat.exe --enable-debug-gui
 VRChat.exe --enable-verbose-logging
 
 # 指定日志文件
-VRChat.exe --log-file "C:\path\to\logs.txt"
+VRChat.exe --log-file "<日志输出路径>.txt"
 ```
 
 | 参数 | 用途 |

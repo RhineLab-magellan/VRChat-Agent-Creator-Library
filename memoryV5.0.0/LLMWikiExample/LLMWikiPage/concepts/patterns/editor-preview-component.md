@@ -314,9 +314,9 @@ public class YourBehaviourEditor : Editor {
 ## Reference Implementation
 
 ```
-../参考工程/QuickBrown/LuraSwitch2/02_CORE/02_Mirror/SCRIPT/MirrorAreaPreview.cs
-../参考工程/QuickBrown/LuraSwitch2/02_CORE/01_Switch/SCRIPT/Collider_AreaPreview.cs
-../参考工程/QuickBrown/LuraSwitch2/02_CORE/10_HeightOffsetter/SCRIPT/HeightOffsetterPreview.cs
+源资料层《QuickBrown·LuraSwitch2·MirrorAreaPreview.cs》（参考实现，不随发布包分发）
+源资料层《QuickBrown·LuraSwitch2·Collider_AreaPreview.cs》（参考实现，不随发布包分发）
+源资料层《QuickBrown·LuraSwitch2·HeightOffsetterPreview.cs》（参考实现，不随发布包分发）
 ```
 
 ---

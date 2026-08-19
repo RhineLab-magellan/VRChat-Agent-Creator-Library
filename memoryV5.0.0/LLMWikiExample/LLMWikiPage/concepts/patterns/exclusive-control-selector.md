@@ -236,7 +236,7 @@ if (!_allowAllOff && _activeIndex == changedIndex) {
 
 ## Reference Implementation
 
-`../参考工程/QuickBrown/LuraSwitch2/02_CORE/03_ModeSwitch/SCRIPT/SwitchSelector.cs` (849 行)
+`LuraSwitch2 参考工程源码《SwitchSelector.cs》（外部样例，不随发布包分发）` (849 行)
 
 ---
 

@@ -248,7 +248,7 @@ public override void OnDeserialization() {
 
 ## Reference Implementation
 
-`../参考工程/QuickBrown/LuraSwitch2/02_CORE/01_Switch/SCRIPT/SwitchBoard.cs` (581 行)
+`LuraSwitch2 参考工程源码《SwitchBoard.cs》（外部样例，不随发布包分发）` (581 行)
 
 ---
 

@@ -2,7 +2,7 @@
 title: "Meta Quest 设备 / 系统故障排查（候选专题）"
 category: platform
 knowledge_level: applied
-status: active
+status: draft
 source: docs.vrcd.org.cn/books/meta-quest + 分类审查归纳
 source_type: community
 version: 1.0
@@ -54,7 +54,7 @@ updated: 2026-07-13
 ## 3. 入库原则
 - 所有条目都应优先写成 **“问题类型 / 排查方向 / 置信度”**，而不是绝对断言。
 - 若某条经验后续获得官方或多源交叉验证，可再考虑上移到主干文档。
-- 若只是一次性 workaround，应留在 `../../../../（见源库 raw/ 目录）参考文献` 层而非长期 memory。
+- 若只是一次性 workaround，应留在**源资料层**（包外，不随发布包分发）而非知识页。
 
 ## 4. 当前状态
 - 已建立条目骨架，等待后续将 `meta-quest.md` 中可保留的稳定部分压缩纳入。

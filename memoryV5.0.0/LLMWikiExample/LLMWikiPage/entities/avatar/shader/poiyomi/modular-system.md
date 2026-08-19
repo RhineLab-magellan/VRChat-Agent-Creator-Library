@@ -293,7 +293,7 @@ VRLTC_PoiYourModule.poiTemplateCollection
 | **Global Themes** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
 | **RGBA Color Masking** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
 | **BlackLight Masking** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
-| **Poiyomi Pro vs Toon** | `./pro-vs-toon.md` |
+| **Poiyomi Pro vs Toon** | `../../../../comparisons/poiyomi-pro-vs-toon.md` |
 | **Poiyomi 主索引** | `./index.md` |
 
 ---

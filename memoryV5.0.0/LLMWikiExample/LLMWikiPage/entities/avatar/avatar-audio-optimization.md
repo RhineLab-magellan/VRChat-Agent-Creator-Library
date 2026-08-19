@@ -426,11 +426,11 @@ updated: 2026-07-04
 
 ### 8.4 知识整理笔记
 
-- `../../../../（见源库 raw/ 目录）参考文献/18-vrchat-CI4-notes/05-audio-compression-formats.md`
-- `../../../../（见源库 raw/ 目录）参考文献/18-vrchat-CI4-notes/06-audio-load-types.md`
-- `../../../../（见源库 raw/ 目录）参考文献/18-vrchat-CI4-notes/07-audio-compression-reference.md`
-- `../../../../（见源库 raw/ 目录）参考文献/18-vrchat-CI4-notes/11-audio-sample-rate.md`
-- `../../../../（见源库 raw/ 目录）参考文献/18-vrchat-CI4-notes/12-load-in-background.md`
+- `源资料层笔记：《18-vrchat-CI4-notes/05-audio-compression-formats》`
+- `源资料层笔记：《18-vrchat-CI4-notes/06-audio-load-types》`
+- `源资料层笔记：《18-vrchat-CI4-notes/07-audio-compression-reference》`
+- `源资料层笔记：《18-vrchat-CI4-notes/11-audio-sample-rate》`
+- `源资料层笔记：《18-vrchat-CI4-notes/12-load-in-background》`
 
 ---
 

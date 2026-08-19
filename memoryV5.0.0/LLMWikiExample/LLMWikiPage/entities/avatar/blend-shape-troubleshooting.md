@@ -345,7 +345,7 @@ FX Layer:
 
 - video_SP09 (8:34, 236 帧) — 4 步排障法主体
 - VideoAP op_05 — 瞳关闭动画特殊流程
-- 蒸馏产物: `../../../../（见源库 raw/ 目录）参考文献/笔记/avatar-video-consolidated-2026-07-04/KP02-Blend-Shape系统性排障4步法.md`
+- 蒸馏产物: `源资料层笔记：《笔记/avatar-video-consolidated-2026-07-04/KP02-Blend-Shape系统性排障4步法》`
 
 ---
 

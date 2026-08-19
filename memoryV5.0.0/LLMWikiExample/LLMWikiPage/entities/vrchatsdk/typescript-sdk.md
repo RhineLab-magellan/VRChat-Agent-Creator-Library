@@ -3,7 +3,7 @@ title: "VRChat.js - JavaScript SDK"
 category: vrchatsdk
 knowledge_level: applied
 status: active
-source: 本地知识库整理
+source: https://vrchat.community/javascript
 source_type: community
 version: 1.0
 last_review: 2026-06-20
@@ -23,13 +23,12 @@ related:
   - api-worlds.md
 type: entity
 created: 2026-06-20
-sources: 本地知识库整理
+sources: https://vrchat.community/javascript
 updated: 2026-06-20
 ---
----
-source: https://vrchat.community/javascript
-date: 2026-06-10
----
+> 自动生成文档数据：source: https://vrchat.community/javascript；date: 2026-06-10
+>
+
 
 # VRChat.js - JavaScript SDK
 

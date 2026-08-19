@@ -243,12 +243,12 @@ DressingTools (DT2):  ← ⭐NEW 2026-08-19
 
 ## 跨域引用（2026-07-04 更新）
 
-> 以下文档虽位于 `platform/` 和 `sources/` 域，但与 Avatar 域紧密相关：
+> 以下文档虽位于 `platform/` 域与源资料层（包外），但与 Avatar 域紧密相关：
 
 - `../platform/account-registration-cn.md` — VRChat 账号注册（国内网络环境）
 - `../platform/unity-install-cn.md` — Unity Hub 国内安装指南
 - `../platform/backup-strategy.md` — VRChat 创作者备份策略
-- `../sources/vn3-license.md` — VN3 协议详解
-- `../sources/blender-preprocessing.md` — Blender 预处理工具链（CATS + VRM）
+- `源资料层《vn3-license》` — VN3 协议详解
+- `源资料层《blender-preprocessing》` — Blender 预处理工具链（CATS + VRM）
 
-> 上述文档由 86vrchat 笔记提炼（2026-07-04 纳入），详见 `../../../../（见源库 raw/ 目录）参考文献/86vrchat-对比分析/99-Memory纳入指南.md`
+> 上述文档由 86vrchat 笔记提炼（2026-07-04 纳入），详见 `源资料层笔记：《86vrchat-对比分析/99-Memory纳入指南》`

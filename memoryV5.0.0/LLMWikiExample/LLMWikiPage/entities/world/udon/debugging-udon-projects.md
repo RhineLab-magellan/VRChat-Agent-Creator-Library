@@ -58,7 +58,7 @@ updated: 2026-06-20
 VRChat 日志文件位置:
 
 ```
-C:\Users\YourName\AppData\LocalLow\VRChat\VRChat
+<用户目录>\AppData\LocalLow\VRChat\VRChat
 ```
 
 文件命名:

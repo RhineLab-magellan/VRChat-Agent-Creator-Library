@@ -177,7 +177,7 @@ public class CourseManager : UdonSharpBehaviour
 
 - **Udon Animator + Udon API**: [[entities/avatar/animator-system]]
 - **Networking 模式**: [[entities/api/networking]]
-- **VRCObjectSync**: `（见源库 sources/ 目录）supported-assets.md`(待建)
+- **VRCObjectSync**: `源资料层《supported-assets》（归档层，不随发布包分发）`(待建)
 - **VRC Pickup**: [[pickups]]
 
 ## 相关 Udon 文档链接

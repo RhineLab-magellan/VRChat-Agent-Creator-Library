@@ -382,7 +382,7 @@ v1.05 强化了**所有操作反馈**:
 | 文档 | 关系 |
 |------|------|
 | [LuraSwitch2（Lura Booth）](https://lura.booth.pm/) | **本项目的案例研究型源文档**(基于 v3.00,作为历史参考) |
-| `（见源库 sources/ 目录）udon-world-plugins.md` | Udon World 插件索引 |
+| `源资料层《udon-world-plugins》（归档层，不随发布包分发）` | Udon World 插件索引 |
 | [[entities/world/vvmw]] | VVMW 视频管理(可与 Slider_Video 配合) |
 | [[concepts/patterns/master-follower-syncer]] | Syncer 模式(来自本项目) |
 | [[concepts/patterns/exclusive-control-selector]] | 互斥控制(来自本项目) |

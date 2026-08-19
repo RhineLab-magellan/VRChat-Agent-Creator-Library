@@ -315,16 +315,16 @@ Avatar
 
 | 引用目标 | 位置 |
 |----------|------|
-| **Poiyomi Installation** | `./installation.md` |
-| **Poiyomi Pro vs Toon** | `./pro-vs-toon.md` |
-| **Poiyomi Shader Variants** | `./shader-variants.md` |
-| **Poiyomi Quest 优化** | `./quest-optimization.md` |
-| **lilToon 知识库** | `../liltoon/index.md` |
-| **SCSS 知识库** | `../scss.md` |
+| **Poiyomi Installation** | `../entities/avatar/shader/poiyomi/installation.md` |
+| **Poiyomi Pro vs Toon** | `./poiyomi-pro-vs-toon.md` |
+| **Poiyomi Shader Variants** | `../entities/avatar/shader/poiyomi/shader-variants.md` |
+| **Poiyomi Quest 优化** | `../entities/avatar/shader/poiyomi/quest-optimization.md` |
+| **lilToon 知识库** | `../entities/avatar/shader/liltoon/index.md` |
+| **SCSS 知识库** | `../entities/avatar/shader/scss.md` |
 | **Poiyomi VPM 数据** | [Poiyomi 官方](https://poiyomi.com/) |
 | **lilToon VPM 数据** | [lilToon 官方](https://lilxyzw.github.io/lilToon/) |
 | **Poiyomi 主索引** | `./index.md` |
-| **Poiyomi Shader Locking 机制** | `./shader-locking-mechanism.md` |
+| **Poiyomi Shader Locking 机制** | `../entities/avatar/shader/poiyomi/shader-locking-mechanism.md` |
 
 ---
 

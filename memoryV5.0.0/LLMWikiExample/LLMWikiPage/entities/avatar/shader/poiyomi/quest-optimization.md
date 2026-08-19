@@ -271,7 +271,7 @@ Quest 也支持 **VRC Light Volumes**(社区开源项目 REDSIM/VRCLightVolumes�
 | 引用目标 | 位置 |
 |----------|------|
 | **Poiyomi Shader Variants** | `./shader-variants.md` |
-| **Poiyomi Pro vs Toon** | `./pro-vs-toon.md` |
+| **Poiyomi Pro vs Toon** | `../../../../comparisons/poiyomi-pro-vs-toon.md` |
 | **Poiyomi AudioLink 集成** | `./audiolink-integration.md` |
 | **Poiyomi Modular System** | `./modular-system.md` |
 | **VRChat Performance Rank** | [[entities/avatar/performance-rank]] |

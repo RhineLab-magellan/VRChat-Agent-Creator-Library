@@ -27,7 +27,7 @@ updated: 2026-06-20
 # Drone API 总览 (VRCDroneApi)
 
 > Subtype: API 总览
-> 父级索引: [[entities/world/udon/players/index]]](../index.md)
+> 父级索引: [[entities/world/udon/players/index]]
 > 抓取日期: 2026-06-15
 
 ---

@@ -103,7 +103,7 @@ updated: 2026-07-12
 
 处理要求：
 
-1. 优先记录到 （见源库 sources/ 目录） 或 （见源库 references/ 目录）；
+1. 优先记录到 源资料归档层（不随发布包分发） 或 源资料归档层（不随发布包分发）；
 2. 标记来源等级与可信度；
 3. 标记 `[COMMUNITY]` / `[UNVERIFIED]` / `[INFERENCE]`；
 4. 至少经过官方来源、源码验证、实际项目验证或多来源交叉验证后，才能晋升为：
@@ -129,11 +129,11 @@ updated: 2026-07-12
    - 维护状态；
    - 安装与使用边界；
    - 与官方规则的冲突或补充；
-3. 项目 README、Wiki、源码或 Release Notes 作为 `sources/` 证据；
+3. 项目 README、Wiki、源码或 Release Notes 作为源资料层证据；
 4. 沉淀后的经验可进入：
    - `patterns/`
    - `rules/`
-   - `reviews/`
+   - 审查归档层
    - 对应 domain 文档；
 5. 不把广告、营销描述、主观推荐、作者自夸直接写入知识库事实；
 6. 不把“项目自身支持”误写成“VRChat 平台支持”。
@@ -224,10 +224,10 @@ updated: 2026-07-12
 | 官方长期事实 | [[FACT]] 或具体 domain 文档 |
 | 跨域硬约束 | [[_always-load]] |
 | 官方 API / SDK 细节 | [[entities/api/index]]、[[entities/vrchatsdk/index]]、[[entities/world/udon/index]] |
-| 开源项目来源分析 | （见源库 sources/ 目录） |
-| 外部资料对比 / 冲突审计 | （见源库 references/ 目录） |
+| 开源项目来源分析 | 源资料归档层（不随发布包分发） |
+| 外部资料对比 / 冲突审计 | 源资料归档层（不随发布包分发） |
 | 可复用工程模式 | [[concepts/patterns/index]] |
-| 失败案例 / 审查规则 | （见源库 reviews/ 目录） 或 [[concepts/rules/index]] |
+| 失败案例 / 审查规则 | 源资料归档层（不随发布包分发） 或 [[concepts/rules/index]] |
 | 尚未验证社区经验 | （来源：社区笔记，本地整理） |
 
 ---
@@ -236,6 +236,6 @@ updated: 2026-07-12
 
 - `SOUL.md`：只保留网络搜索的核心原则与本文件引用。
 - [[kb-protocol]]：定义知识库写入与维护流程。
-- `（见源库 sources/ 目录）index.md`：定义来源分类与 Tier 处理方式。
-- `（见源库 references/ 目录）index.md`：用于记录外部资料对比、冲突与修正历史。
+- `源资料层《index》（归档层，不随发布包分发）`：定义来源分类与 Tier 处理方式。
+- `源资料层《index》（归档层，不随发布包分发）`：用于记录外部资料对比、冲突与修正历史。
 - [[FACT]]：只接收长期有效且证据充分的核心事实。

@@ -443,7 +443,7 @@ Step 5: 在 Project 面板中验证资源已就位
 
 ### 视频来源
 
-- 散落多个视频 — 蒸馏产物见 `../../../../（见源库 raw/ 目录）参考文献/笔记/avatar-video-consolidated-2026-07-04/KP11-模型导入工作流.md`
+- 散落多个视频 — 蒸馏产物见 `源资料层笔记：《笔记/avatar-video-consolidated-2026-07-04/KP11-模型导入工作流》`
 
 ---
 
@@ -572,13 +572,13 @@ Step 6: Content Manager
 
 ### 视频来源
 
-- video_5 (6:50, 102 帧) — 蒸馏产物见 `../../../../（见源库 raw/ 目录）参考文献/笔记/avatar-video-consolidated-2026-07-04/KP05-VRChat-SDK-面板诊断流程.md`
+- video_5 (6:50, 102 帧) — 蒸馏产物见 `源资料层笔记：《笔记/avatar-video-consolidated-2026-07-04/KP05-VRChat-SDK-面板诊断流程》`
 
 ---
 
 ## 扩展阅读(2026-07-04 新增)
 
-- `../sources/blender-preprocessing.md` — Blender 预处理工具链(CATS + VRM)
+- `源资料层《blender-preprocessing》` — Blender 预处理工具链(CATS + VRM)
 - `../platform/unity-install-cn.md` — Unity Hub 国内安装指南
 - `../platform/backup-strategy.md` — 创作者备份策略
 

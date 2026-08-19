@@ -49,7 +49,7 @@ updated: 2026-07-04
 | **设计规范** | 遵循 VRChat 最佳实践(同步、Ownership、Quest 兼容) |
 
 **与 （来源：Open Source Projects，本地整理） 的区别**:
-- `sources/open-source-projects.md` = **案例研究**型参考工程(不推荐给创作者,仅分析其设计模式)
+- `源资料层《open-source-projects》` = **案例研究**型参考工程(不推荐给创作者,仅分析其设计模式)
 - 本文档 = **工具使用**型推荐(创作者可直接装到自己的 World 中使用)
 
 **与 [[entities/world/examples/index]] 的区别**:
@@ -247,7 +247,7 @@ https://xtlcdn.github.io/vpm/
 | **AudioLink** | 音频同步/可视化 | ⏳ 待评估(已是 Hybrid 域核心文档) |
 | **VRCLightVolumes** | 光照系统 | ⏳ 待评估(已有 [[entities/world/vrc-light-volumes]]) |
 
-> **注**: 案例研究(`sources/open-source-projects.md`) ≠ 推荐插件(本文)。升级条件: 工具稳定性 + 社区反馈 + 文档完整度 + 长期维护承诺
+> **注**: 案例研究(`源资料层《open-source-projects》`) ≠ 推荐插件(本文)。升级条件: 工具稳定性 + 社区反馈 + 文档完整度 + 长期维护承诺
 
 ---
 
@@ -263,7 +263,7 @@ https://xtlcdn.github.io/vpm/
 | **VPM 分发** | 有 `package.json` 可通过 VPM 安装 |
 | **设计质量** | 遵循 VRChat 最佳实践(无反射黑魔法、无 GC 滥用) |
 | **跨平台** | PC/Quest 兼容(不依赖 PC-only 特性) |
-| **可验证** | 知识库已建立 `sources/` 深度分析文档 |
+| **可验证** | 知识库已建立 源资料层 深度分析文档 |
 
 ---
 

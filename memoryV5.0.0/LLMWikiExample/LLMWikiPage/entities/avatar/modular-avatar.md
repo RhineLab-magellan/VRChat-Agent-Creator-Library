@@ -83,7 +83,7 @@ updated: 2026-08-13
 | 想让某个菜单只在 VRChat 出现？ | Platform Filter 加 Include VRChat | [§7.12](#712-platform-filter-) |
 
 > **配套详细教程**（每个教程的"官方原文 + 玩家视角操作 + 验证 + 易错点"）：
-> [[entities/avatar/modular-avatar-tutorials-detailed]]](modular-avatar-tutorials-detailed.md)
+> [[entities/avatar/modular-avatar-tutorials-detailed]]
 
 ---
 

@@ -248,7 +248,7 @@ magnetism
 
 ## Reference Implementation
 
-`../参考工程/QuickBrown/LuraSwitch2/02_CORE/01_Switch/SCRIPT/SliderSwitch.cs` (2218 行,含 SoftDetent 实现)
+`LuraSwitch2 参考工程源码《SliderSwitch.cs》（外部样例，不随发布包分发）` (2218 行,含 SoftDetent 实现)
 
 ---
 

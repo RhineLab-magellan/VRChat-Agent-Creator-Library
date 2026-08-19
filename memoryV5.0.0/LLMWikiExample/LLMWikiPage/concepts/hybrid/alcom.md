@@ -174,4 +174,4 @@ vrc-get install com.anatawa12.avatar-optimizer
 
 ## 相关页面
 
-[[vcc.md]] · （见源库 raw/ 目录） · [[audio-link.md]] · [[osc-protocol.md]] · [[udon-world-plugins.md]]
+[[vcc.md]] · 源资料层（原始归档，不随发布包分发） · [[audio-link.md]] · [[osc-protocol.md]] · [[udon-world-plugins.md]]

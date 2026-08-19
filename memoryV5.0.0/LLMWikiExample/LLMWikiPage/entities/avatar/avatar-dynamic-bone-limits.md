@@ -122,7 +122,7 @@ Settings → Safety tab → "Performance Options" 按钮(右上角)
 ```
 
 实际路径(Windows):
-- `C:\Users\<Username>\AppData\LocalLow\VRChat\vrchat\config.json`
+- `<用户目录>\AppData\LocalLow\VRChat\vrchat\config.json`
 
 如果文件不存在,手动创建 `config.json`。
 

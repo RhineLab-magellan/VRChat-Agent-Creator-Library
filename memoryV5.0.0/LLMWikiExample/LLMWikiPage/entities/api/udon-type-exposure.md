@@ -24,14 +24,14 @@ related:
   - ../world/udon/vm-and-assembly.md
   - ../../concepts/rules/udon-vm-architecture.md
 
-source: `../../../../memory/raw/参考文献/UdonTypeExposure.txt` + VRChat 官方文档
+source: https://github.com/vrchat-community/UdonSharp/wiki/class-exposure-tree + VRChat 官方文档
 source_type: official
 version: 1.0
 last_review: 2026-06-15
 confidence: High
 type: entity
 created: 2026-06-15
-sources: `../../../../memory/raw/参考文献/UdonTypeExposure.txt` + VRChat 官方文档
+sources: https://github.com/vrchat-community/UdonSharp/wiki/class-exposure-tree + VRChat 官方文档
 updated: 2026-06-15
 ---
 # Udon Type Exposure Tree - VRChat SDK 3.10.3

@@ -85,9 +85,9 @@ Control Panel → Authentication → Sign In
 
 | 安装源 | 默认路径 |
 |--------|----------|
-| **Steam** | `C:\Program Files (x86)\Steam\steamapps\common\VRChat\VRChat.exe` |
-| **Oculus** | `C:\Program Files\Oculus\Software\Software\vrchat-vrchat\VRChat.exe` |
-| **Viveport** | `C:\Viveport\ViveApps\469fbcbb-bfde-40b5-a7d4-381249d387cd\1597468388\VRChat.exe` |
+| **Steam** | `<安装盘>:\Program Files (x86)\Steam\steamapps\common\VRChat\VRChat.exe` |
+| **Oculus** | `<安装盘>:\Program Files\Oculus\Software\Software\vrchat-vrchat\VRChat.exe` |
+| **Viveport** | `<安装盘>:\Viveport\ViveApps\469fbcbb-bfde-40b5-a7d4-381249d387cd\1597468388\VRChat.exe` |
 
 > **FACT**:未设置正确路径,Build & Test 可能启动失败或启动错误的客户端。
 

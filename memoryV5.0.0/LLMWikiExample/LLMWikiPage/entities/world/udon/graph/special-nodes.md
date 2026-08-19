@@ -212,7 +212,7 @@ for (int i = start; i < end; i += step) {
 
 **使用技巧**:
 - 解耦子系统: 中央控制器 → `SetProgramVariable` → 子系统(多机位导演系统 已知模式,参考工程)
-- 详见 `../../patterns/event-driven-state-machine.md`
+- 详见 ``
 
 ---
 
@@ -333,7 +333,7 @@ targetUdon.SendCustomEvent("EventName");
 targetUdon.SendCustomNetworkEvent(NetworkEventTarget.All, "EventName");
 ```
 
-> **【推断】** 带参版本在 UdonSharp 中需使用 `[NetworkCallable]` + `NetworkCalling.SendCustomNetworkEvent`(SDK 3.8.1+),详见 `../../api/networking.md`
+> **【推断】** 带参版本在 UdonSharp 中需使用 `[NetworkCallable]` + `NetworkCalling.SendCustomNetworkEvent`(SDK 3.8.1+),详见 ``
 
 ---
 
@@ -372,8 +372,8 @@ targetUdon.SendCustomNetworkEvent(NetworkEventTarget.All, "EventName");
 - [`graph-elements.md`](graph-elements.md) — Graph 元素
 - [`searching-for-nodes.md`](searching-for-nodes.md) — 节点搜索
 - [`type-nodes.md`](type-nodes.md) — 类型引用节点
-- `../../api/networking.md` — Networking(含 NetworkCallable)
-- `../../patterns/event-driven-state-machine.md` — 状态机模式
+- `` — Networking(含 NetworkCallable)
+- `` — 状态机模式
 
 ---
 

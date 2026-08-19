@@ -96,7 +96,7 @@ LLMWikiPage/                     # 知识页根（现行知识库）
 ├── meta/                        # 元协议/元数据（6 个文件）
 └── queries/                     # 查询（1 个文件）
 
-> 📌 raw 源材料位于工作区根 `memory/raw/`（哈希账本锚定、不可变，未随知识页发布包分发）；知识页根为 `LLMWikiExample/LLMWikiPage/`，`memory/raw/` 仅作不可变源材料。
+> 📌 raw 源材料（哈希账本锚定、不可变）不随知识页发布包分发；知识页根为当前 `LLMWikiPage/`。
 ```
 
 ---
@@ -280,10 +280,10 @@ LLMWikiPage/                     # 知识页根（现行知识库）
 
 ## 知识完整性原则
 
-> ⚠️ **所有知识库索引必须指向现行知识页根 `LLMWikiExample/LLMWikiPage/`**
+> ⚠️ **所有知识库索引必须指向现行知识页根 `LLMWikiPage/`**
 > - 外部文档随时可能删除或丢失
 > - 工具安装链接（VPM/BOOTH）可以保留（操作指引，非知识本身）
-> - 知识来源路径必须本地化（`memory/raw/` 为不可变源材料）；raw 源材料与知识页根不在同一分发单元
+> - 知识来源必须可追溯（URL 或源材料引用）；raw 源材料层不随发布包分发
 
 ---
 
@@ -337,7 +337,7 @@ LLMWikiPage/                     # 知识页根（现行知识库）
 - **VRC 委托价格**：三档预算（低/中/高）+ 三种工具链对比
   - 详见 `entities/avatar/commission-pricing.md`
 
-> **纳入决策**：见 `raw/参考文献/86vrchat-对比分析/99-Memory纳入指南.md`
+> **纳入决策**：见 86vrchat 对比分析的源材料纳入指南（源资料层，不随发布包分发）
 > **标记体系**：[FACT-OFFICIAL] / [FACT-VN3] / [FACT-OFFICIAL-REPO] / [COMMUNITY-86vrchat] / [INFERENCE] / [UNKNOWN]
 
 ---

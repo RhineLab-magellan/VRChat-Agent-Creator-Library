@@ -36,7 +36,7 @@ updated: 2026-06-20
 
 ## 1. Opcode Set — 只有 9 条指令
 
-Udon VM 的指令集极其精简。所有 UdonSharp 代码最终编译为这 9 条指令的组合。**完整规范(Udon Assembly 语法、9 Opcodes 详解、Extern 签名格式)见 [[entities/world/udon/vm-and-assembly]]](../world/udon/vm-and-assembly.md)**。
+Udon VM 的指令集极其精简。所有 UdonSharp 代码最终编译为这 9 条指令的组合。**完整规范(Udon Assembly 语法、9 Opcodes 详解、Extern 签名格式)见 [[entities/world/udon/vm-and-assembly]]**。
 
 | Opcode | 值 | 操作数 | 含义 |
 |---|---|---|---|

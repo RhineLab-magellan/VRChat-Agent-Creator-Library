@@ -236,7 +236,7 @@ Poiyomi 10.0 提供 **9 种 Lighting Type**,从卡通(Texture Ramp)到 PBR(Reali
 | Cloth | ❌ 404 | 推断文档,影响小 |
 | SDF | ❌ 404 | 推断文档,影响中 |
 
-**Stage 4 重抓计划**: 见 `（见源库 reviews/ 目录）poiyomi-integration-plan-2026-07-01.md` §3.6
+**Stage 4 重抓计划**: 见 `源资料层《poiyomi-integration-plan-2026-07-01》（归档层，不随发布包分发）` §3.6
 
 ---
 
@@ -247,7 +247,7 @@ Poiyomi 10.0 提供 **9 种 Lighting Type**,从卡通(Texture Ramp)到 PBR(Reali
 | **Poiyomi Shadows/Shading 原文(合并)** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
 | **Light Data(基础)** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
 | **Rim Lighting(边缘光)** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
-| **Poiyomi Pro vs Toon** | `./pro-vs-toon.md` |
+| **Poiyomi Pro vs Toon** | `../../../../comparisons/poiyomi-pro-vs-toon.md` |
 | **Poiyomi 主索引** | `./index.md` |
 
 ---

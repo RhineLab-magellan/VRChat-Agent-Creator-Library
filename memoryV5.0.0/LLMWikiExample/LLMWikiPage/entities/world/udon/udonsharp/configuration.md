@@ -237,7 +237,7 @@ namespace MyTeam.Worlds
 | 现有知识库 | 应补充/引用 |
 |-----------|----------|
 | [[entities/api/udonsharp-runtime]] | 编译管线与编辑器集成相关 |
-| `（见源库 sources/ 目录）vpm-package-template.md` | VPM Package 开发的 CI 配置参考 |
+| `源资料层《vpm-package-template》（归档层，不随发布包分发）` | VPM Package 开发的 CI 配置参考 |
 | [[concepts/rules/udonsharp-language-limits]] | 编译错误处理与限制 |
 
 ---

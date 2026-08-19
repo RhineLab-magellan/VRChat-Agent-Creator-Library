@@ -1029,7 +1029,7 @@ VRCD 21 文档 2025 年自我修正:
 | **"它如何工作"透明化** | "**How does it work?**" | 组件参考必带 |
 | **"已知限制"诚实** | "**Limitations:**" / "**However, ...**" | 高级组件带 |
 | **"Try X first"建议** | "**If you're not sure**, you can try both" | Quick Swap |
-| **"Edit this page"开放** | "**[Edit this page](GitHub link)**" | 每个页面底部 |
+| **"Edit this page"开放** | "**Edit this page（GitHub 链接）**" | 每个页面底部 |
 
 ## T. MA 教学风格与前三源的融合策略
 

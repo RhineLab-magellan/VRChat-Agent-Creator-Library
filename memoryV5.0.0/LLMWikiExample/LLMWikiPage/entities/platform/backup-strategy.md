@@ -42,7 +42,7 @@ updated: 2026-07-04
 
 | 平台 | 路径 |
 |------|------|
-| Windows | `%APPDATA%\UnityHub`(即 `C:\Users\<用户名>\AppData\Roaming\UnityHub`) |
+| Windows | `%APPDATA%\UnityHub`(即 `<用户目录>\AppData\Roaming\UnityHub`) |
 | macOS | `~/Library/Application Support/UnityHub` |
 | Linux | `~/.config/UnityHub` |
 
@@ -51,7 +51,7 @@ updated: 2026-07-04
 **[FACT]** VCC 与 ALCOM **共享同一配置位置**:
 
 - Windows: `%LOCALAPPDATA%\VRChatCreatorCompanion`
-- 具体: `C:\Users\<用户名>\AppData\Local\VRChatCreatorCompanion`
+- 具体: `<用户目录>\AppData\Local\VRChatCreatorCompanion`
 - 关键文件: **`settings.json`**(工程路径 + 第三方包记录)
 
 **[FACT-OFFICIAL]** ALCOM 设计为与 VCC **无缝共存**,使用相同 `settings.json`

@@ -1,5 +1,5 @@
 ---
-title: VRC 委托模型价格区间
+title: VRC 委托模型定价参考（定性分级）
 category: avatar
 knowledge_level: applied
 status: active
@@ -27,7 +27,9 @@ sources: https://docs.vrcd.org.cn/books/86vrchat
 updated: 2026-07-04
 ---
 
-# VRC 委托模型价格区间
+# VRC 委托模型定价参考（定性分级）
+
+> ⚠️ **定性说明**：本文档仅提供**定性分级**（预算低 / 中 / 高三档），**不含具体价格数字**；实际报价以市场行情为准。
 
 > Domain: Avatar | 适用: 委托模型前的预算决策
 > 来源: 86vrchat 中文社区

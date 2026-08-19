@@ -267,7 +267,7 @@ Poiyomi 与 **EasyQuestSwitch** 兼容(VRChat 官方工具),可一键切换 PC/Q
 | **Poiyomi Render Preset** | `[Poiyomi Shaders 官方文档](https://www.poiyomi.com/) |
 | **Poiyomi Installation 知识** | `./installation.md` |
 | **Poiyomi Quest 优化** | `./quest-optimization.md` |
-| **Poiyomi Pro vs Toon** | `./pro-vs-toon.md` |
+| **Poiyomi Pro vs Toon** | `../../../../comparisons/poiyomi-pro-vs-toon.md` |
 | **Poiyomi 主索引** | `./index.md` |
 
 ---

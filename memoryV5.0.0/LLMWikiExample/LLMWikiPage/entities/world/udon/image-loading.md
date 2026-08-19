@@ -208,7 +208,7 @@ public class TextureInfo
 | `GetError()` | `VRCImageDownloadError` | 关联的错误(失败时) |
 | `GetErrormessage()` | `string` | 错误消息 |
 | `GetMaterial()` | `Material` | 传给 `DownloadImage` 的 Material |
-| `GetProgress()` | `float` | 下载进度 [0, 1](用于自定义加载条) |
+| `GetProgress()` | `float` | 下载进度 `[0, 1]`（用于自定义加载条） |
 | `GetResult()` | `Texture2D` | 下载的图片纹理 |
 | `GetSizeInMemoryBytes()` | `int` | 纹理占用字节数 |
 | `GetState()` | `VRCImageDownloadState` | 下载状态 |

@@ -306,7 +306,7 @@ MA Merge Armature 算法
 - [L3 社区] MA 官方文档 Bone Proxy: https://modular-avatar.nadena.dev/docs/reference/bone-proxy
 - [L1 Unity 官方] Transform 父子关系: https://docs.unity3d.com/2022.3/Documentation/Manual/class-Transform.html
 - [L1 Unity 官方] Skinned Mesh Renderer: https://docs.unity3d.com/2022.3/Documentation/Manual/class-SkinnedMeshRenderer.html
-- 蒸馏产物: `../../../../（见源库 raw/ 目录）参考文献/笔记/avatar-video-consolidated-2026-07-04/KP01-骨绑定工作流决策树.md`
+- 蒸馏产物: `源资料层笔记：《笔记/avatar-video-consolidated-2026-07-04/KP01-骨绑定工作流决策树》`
 
 ## §10 视频来源
 

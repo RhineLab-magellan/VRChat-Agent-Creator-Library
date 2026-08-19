@@ -46,7 +46,7 @@ updated: 2026-06-20
 - 预录 MIDI 演奏的精确回放
 
 ### 快速开始
-可直接加载 **MidiPlaybackScene 示例** 起步: 详见 [[entities/world/examples/midi-playback]]](../../examples/midi-playback.md)
+可直接加载 **MidiPlaybackScene 示例** 起步: 详见 [[entities/world/examples/midi-playback]]
 
 ---
 
@@ -172,7 +172,7 @@ public override void MidiNoteOff(int channel, int number, int velocity)
 
 ## 💡 完整 UdonSharp 示例
 
-> **【FACT 验证】** 来自 Example Central 4-Grid LogoButton,完整代码见 [[entities/world/examples/midi-playback]]](../../examples/midi-playback.md#完整-udonsharp-代码logobuttoncs)
+> **【FACT 验证】** 来自 Example Central 4-Grid LogoButton,完整代码见 [[entities/world/examples/midi-playback]] （完整 UdonSharp 代码见示例页）
 
 核心逻辑:
 ```csharp

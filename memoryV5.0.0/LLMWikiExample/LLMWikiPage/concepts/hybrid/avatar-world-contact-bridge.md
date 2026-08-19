@@ -278,8 +278,8 @@ updated: 2026-07-12
 - `avatar-world-boundaries.md`
 - `player-observation-boundaries.md`
 - `player-world-trigger-bridge.md`
-- `../api/dynamics.md`
-- `../avatar/vrcraycast.md`
+- ``
+- ``
 
 ---
 

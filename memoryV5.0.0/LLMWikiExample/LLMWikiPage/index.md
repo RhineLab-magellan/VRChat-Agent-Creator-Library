@@ -66,8 +66,8 @@ updated: 2026-08-13
 | Rules | [[concepts/rules/index.md]] | UdonSharp、Networking、Performance、VM、陷阱规则 |
 | Patterns | [[concepts/patterns/index.md]] | 同步、状态机、消息总线、工程设计模式 |
 | VRChatSDK | [[entities/vrchatsdk/index.md]] | HTTP API、WebSocket、数据模型 |
-| Sources | （见源库 sources/ 目录） | 官方/开源/工具来源与案例研究 |
-| References | （见源库 references/ 目录） | 参考文献、对比分析、待晋升资料 |
+| Sources | 源资料归档层（不随发布包分发） | 官方/开源/工具来源与案例研究 |
+| References | 源资料归档层（不随发布包分发） | 参考文献、对比分析、待晋升资料 |
 | Misc | [[concepts/misc/index.md]] | 后处理、无障碍等杂项知识 |
 | Comparisons | [[comparisons/index.md]] | 跨实体/主题对比分析（Shader、工具、架构） |
 | Queries | [[queries/index.md]] | 优质查询答案归档 |
@@ -78,7 +78,7 @@ updated: 2026-08-13
 | 层级 | 入口 | 说明 |
 |---|---|---|
 | Reference Notes | （来源：本地参考笔记） | 参考/整合资料，不直接等同核心事实 |
-| VPM Mirrors | （见源库 vpm-mirrors/ 目录） | VPM 仓库镜像与样本来源 |
+| VPM Mirrors | 源资料层（vpm-mirrors 镜像归档，不随发布包分发） | VPM 仓库镜像与样本来源 |
 | Curator Tools | ~（2026-08-18 归档：``辅助文件`` 已移入 `辅助文件/报告/curator-tools/`，物理保留、不入 Git） | manifest、baseline、审计脚本与报告，默认不进入主知识图谱 |
 
 ---
@@ -107,18 +107,18 @@ updated: 2026-08-13
 | **Udon 调试** | `entities/world/udon/debugging-udon-projects.md` |
 | **Animation/Avatar/Input Events** | `entities/world/udon/animation-events.md` + `avatar-events.md` + `input-events.md` |
 | **VRCTween(官方补间)** | `entities/world/udon/vrctween/index.md` ← ⭐ DOTween 封装 + 7 大类补间 + 虚拟补间 + 复用模式 ⭐NEW 2026-06-21 (2026-06-22 已校验与官方 5-28 一致) |
-| **VRCTween 原始英文 / DOTween 底层** | `raw/参考文献/VRCTween-Official-*.md` + `raw/参考文献/DOTween-Underlying-Engine.md` ← 5 份原始快照 |
+| **VRCTween 原始英文 / DOTween 底层** | VRCTween 官方原始快照（源资料层，不随发布包分发） |
 | **Image/String Loading** | `entities/world/udon/image-loading.md` + `string-loading.md` + `external-urls.md` |
 | **AI Navigation** | `entities/world/udon/ai-navigation.md` ← NavMeshAgent + Owner 计算 |
 | **Using Build & Test** | `entities/world/udon/using-build-test.md` ← 本地测试 |
 | **Udon 版主工具** | `entities/world/udon/udon-moderation-tool-guidelines.md` |
 | 网络同步 | `concepts/rules/networking-rules.md` → `concepts/patterns/manual-sync-state.md` |
 | 性能优化 | `concepts/rules/performance-rules.md` → `concepts/rules/udon-vm-architecture.md` |
-| 陷阱排查 | `concepts/rules/udonsharp-deep-pitfalls.md` → `raw/reviews/common-failures.md` |
+| 陷阱排查 | `concepts/rules/udonsharp-deep-pitfalls.md`（源资料层 common-failures，不随发布包分发） |
 | API 参考 | `entities/api/` 目录（grep 关键词） |
 | **VRCBillboard（原生公告板）** | `entities/api/vrc-billboard.md` ← ⭐ 2026-08-13 官方预告（PLANNED）：`Register`/`Unregister`，原生替代 update loop |
 | 设计模式 | `concepts/patterns/` 目录 |
-| 脚本审查 | `raw/reviews/review-checklist.md` |
+| 脚本审查 | 源资料层 review-checklist（不随发布包分发） |
 | 后处理 | `concepts/misc/postprocessing-principles.md` → `concepts/misc/postprocessing-usage.md` |
 | **光照系统** | `entities/world/vrc-light-volumes.md` ← ⭐ 体素光照 + Point Light Volumes |
 | **光照烘焙** | `entities/world/bakery/light-baking-guide.md` ← ⭐ Bakery + Glim 烘焙指南 |
@@ -168,11 +168,11 @@ updated: 2026-08-13
 
 | 需求 | 路径 |
 |---|---|
-| Example Central | `raw/sources/example-central.md` |
-| **VPM Package Template** | `raw/sources/vpm-package-template.md` ← ⭐NEW |
-| **HoshinoLabs ULocalization 源(A8)** | `raw/sources/ulocalization.md` ← ⭐NEW 2026-06-20 |
-| **HoshinoLabs Sardinal 源(A9)** | `raw/sources/sardinal.md` ← ⭐NEW 2026-06-20 (通用消息总线) |
-| **Unity 动画路径重映射** | `raw/sources/unity-animation-hierarchy-editor.md` ⭐NEW 2026-07-04 (主推 hfcRed/Animation-Repathing) |
+| Example Central | `源资料层《example-central》` |
+| **VPM Package Template** | `源资料层《vpm-package-template》` ← ⭐NEW |
+| **HoshinoLabs ULocalization 源(A8)** | `源资料层《ulocalization》` ← ⭐NEW 2026-06-20 |
+| **HoshinoLabs Sardinal 源(A9)** | `源资料层《sardinal》` ← ⭐NEW 2026-06-20 (通用消息总线) |
+| **Unity 动画路径重映射** | `源资料层《unity-animation-hierarchy-editor》` ⭐NEW 2026-07-04 (主推 hfcRed/Animation-Repathing) |
 
 ### Avatar Domain ← ✅ 已建设
 
@@ -314,7 +314,7 @@ entities/world/
       sequence.md             ← 序列与并行(OnComplete 链,无原生 Sequence)
       custom-tween.md         ← 自定义虚拟补间 + AnimationCurve 缓动
       patterns.md             ← 12 个实战模式(按钮/UI/相机/Late joiner)
-  raw/参考文献/                   ← 外部资料原始快照(独立于知识库索引)
+  源资料原始快照（外部资料，不随发布包分发）
     VRCTween-Official-Overview.md         ← 官方主页 2026-05-28
     VRCTween-Official-Tween-Types.md      ← 官方 tween-types
     VRCTween-Official-Virtual-Tweens.md   ← 官方 virtual-tweens
@@ -397,8 +397,8 @@ entities/world/
       udon-video-sync-player.md
       world-audio-settings.md
 
-raw/reviews/
-  review-checklist.md  common-failures.md  severity-model.md
+源资料 review 快照（外部，不随发布包分发）
+  review-checklist / common-failures / severity-model（原始快照）
 
 concepts/misc/
   postprocessing-principles.md    ← 后处理原理（现实参照）
@@ -413,7 +413,7 @@ entities/platform/                      ← ⭐NEW 跨平台开发
   unity-recorder.md            ← ⭐NEW 2026-07-04 Unity 截图/录屏工具
   unity-admin-warning.md       ← ⭐NEW 2026-07-04 Unity 管理员警告排查
 
-raw/sources/
+源资料 source 快照（外部，不随发布包分发）
   example-central.md           ← Example Central 使用
   vpm-package-template.md      ← VPM Package 开发模板 ⭐NEW
   clientsim.md                  ← ClientSim 编辑器模拟工具
@@ -448,13 +448,13 @@ entities/vrchatsdk/                     ← VRChatSDK HTTP API (18 个文档) �
 | **`entities/vrchatsdk/`** | ✅ ⭐NEW | 19(+1) | **二次审计补全** |
 | **`entities/platform/`** | ✅ ⭐NEW | 6(+2) | **二次审计补全** ⭐2026-07-04 +2 (Recorder + Admin) |
 | **`concepts/misc/`** | ✅ ⭐NEW | 4(+1) | **二次审计补全** |
-| **`raw/references/`** | ✅ ⭐NEW | 2(+1) | **二次审计补全** |
-| `raw/sources/` | ✅ | 12 (+2) | 已就位(2026-06-20 +1 Sardinal, 2026-07-04 +1 AnimationHierarchyEditor) |
+| **`源资料 reference 快照`** | ✅ ⭐NEW | 2(+1) | **二次审计补全** |
+| `源资料 source 快照` | ✅ | 12 (+2) | 已就位(2026-06-20 +1 Sardinal, 2026-07-04 +1 AnimationHierarchyEditor) |
 | `concepts/rules/` | ✅ | 8 | 已就位 |
 | `concepts/patterns/` | ✅ | 31 (+17) | 已就位(2026-06-20 +3 Sardinal 独有) |
 | `entities/world/patterns/` | ✅ ⭐NEW 2026-07-04 | 1 (+1) | **新建子目录**(dynamic-player-list) |
 | `entities/api/` | ✅ | 17 | 已就位 |
-| `raw/reviews/` | ✅ | 4 (32 FAILs) | 已就位(2026-06-20 +4 FAILs) |
+| 源资料 review 快照 | ✅ | 4 (32 FAILs) | 已就位(2026-06-20 +4 FAILs) |
 | `meta/` | ✅ | 4 | 工作模式、KB维护协议、网络搜索准入协议已就位 |
 
 ## VRChatSDK Domain 文件清单
@@ -527,7 +527,7 @@ concepts/hybrid/
 |---|---|---|
 | World/网络 | `networking\|sync\|SetOwner\|RequestSerialization` | [[concepts/rules/index]] |
 | World/性能 | `EXTERN\|boxing\|Update\|GC\|loop` | [[concepts/rules/index]] |
-| World/陷阱 | `FAIL-\|静默\|陷阱` | （见源库 reviews/ 目录） |
+| World/陷阱 | `FAIL-\|静默\|陷阱` | 源资料归档层（不随发布包分发） |
 | World/后处理 | `bloom\|vignette\|grain\|motion blur\|chromatic` | [[concepts/misc/index]] |
 | **World/Persistence** | `PlayerData\|PlayerObject\|VRCEnablePersistence\|OnPlayerRestored` | [[entities/world/udon/persistence/index]] |
 | API | API 方法名 | [[entities/api/index]] |

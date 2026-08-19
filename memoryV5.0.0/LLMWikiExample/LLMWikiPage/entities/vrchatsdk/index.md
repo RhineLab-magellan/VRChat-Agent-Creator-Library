@@ -3,7 +3,7 @@ title: "VRChatSDK 知识库索引"
 category: vrchatsdk
 knowledge_level: applied
 status: active
-source: 本地知识库整理
+source: VRChat 官方 API 文档（https://vrchat.hexdocs.pm/）+ community 参考
 source_type: community
 version: 1.0
 last_review: 2026-06-20
@@ -32,7 +32,7 @@ related:
   - "[[api-files.md]]"
 type: entity
 created: 2026-06-20
-sources: 本地知识库整理
+sources: VRChat 官方 API 文档（https://vrchat.hexdocs.pm/）+ community 参考
 updated: 2026-06-20
 ---
 # VRChatSDK 知识库索引
@@ -42,25 +42,9 @@ updated: 2026-06-20
 **本地化日期**: 2026-06-10
 **文件数**: 18
 
----
+> 自动生成文档数据：## 概述；**重要**: VRChatSDK 与 UdonSharp **不在同一阶层**；- **UdonSharp**: 在 VRChat **游戏内** 的 Udon VM 上运行；- **VRChatSDK**: 在 **VRChat 外**(外部应用、Editor 工具)与 VRChat 服务器通信；**VRChatSDK** 是 VRChat 提供的 **HTTP API + WebSocket**,允许外部应用、Unity Editor 工具、第三方服务与 VRChat 服务器通信。；| 维度 | UdonSharp | VRChatSDK |；|------|-----------|-----------|；| 运行位置 | VRChat 客户端 Udon VM | 外部应用 / Editor / 服务器 |；| 通信对象 | 世界内其他玩家 | VRChat 服务器 API |；| 功能范围 | 游戏逻辑、网络同步、UI 交互 | 用户数据、世界数据、文件管理、实时事件 |；| 延迟 | 游戏内实时(~50-200ms)| HTTP 请求(~100-500ms)|
+>
 
-## 概述
-
-**重要**: VRChatSDK 与 UdonSharp **不在同一阶层**
-- **UdonSharp**: 在 VRChat **游戏内** 的 Udon VM 上运行
-- **VRChatSDK**: 在 **VRChat 外**(外部应用、Editor 工具)与 VRChat 服务器通信
-
-**VRChatSDK** 是 VRChat 提供的 **HTTP API + WebSocket**,允许外部应用、Unity Editor 工具、第三方服务与 VRChat 服务器通信。
-
-
-| 维度 | UdonSharp | VRChatSDK |
-|------|-----------|-----------|
-| 运行位置 | VRChat 客户端 Udon VM | 外部应用 / Editor / 服务器 |
-| 通信对象 | 世界内其他玩家 | VRChat 服务器 API |
-| 功能范围 | 游戏逻辑、网络同步、UI 交互 | 用户数据、世界数据、文件管理、实时事件 |
-| 延迟 | 游戏内实时(~50-200ms)| HTTP 请求(~100-500ms)|
-
----
 
 ## 文档分类
 

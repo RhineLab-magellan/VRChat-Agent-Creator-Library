@@ -1,12 +1,12 @@
 ---
-title: Obsidian Governance - Memory Vault 分层治理规则
+title: Obsidian Governance - LLMWikiPage 分层治理规则
 category: meta
 knowledge_level: governance
 status: active
 source: 本地知识库治理
 source_type: local
-version: 1.0
-last_review: 2026-07-14
+version: 2.0
+last_review: 2026-08-20
 confidence: High
 tags:
   - meta
@@ -14,289 +14,130 @@ tags:
   - governance
   - knowledge-base
 aliases:
-  - Obsidian 分层治理规则
-  - Memory Vault Governance
-  - Obsidian Governance
+  - 知识库治理规则
+  - LLMWikiPage Governance
+  - Vault Governance
 related:
-  - ../[[../index]]
-  - "[[FACT]]"
-  - "[[kb-protocol]]"
-  - "[[auxiliary-scripts]]"
-  # 2026-08-18：_curator_tools/ 已归档至 辅助文件/报告/curator-tools/（不入 Git），原 wikilink 移除
+  - "[[../FACT.md]]"
+  - "[[../index.md]]"
+  - "[[../meta/kb-protocol.md]]"
+  - "[[../meta/auxiliary-scripts.md]]"
 type: governance
 created: 2026-07-14
 sources: 本地知识库治理
-updated: 2026-07-14
+updated: 2026-08-20
 ---
-# Obsidian Governance - Memory Vault 分层治理规则
+# Obsidian Governance - LLMWikiPage 分层治理规则
 
-> 本文件定义 `memory/` Obsidian Vault 的治理边界。目标是让核心知识层完整 Obsidian 化，同时避免工具、备份、历史报告污染知识图谱或被误判为当前事实。
-> 2026-08-18 归档整理：``辅助文件``（治理脚本/报告/备份）已整体移入 `辅助文件/`（脚本→`辅助文件/脚本/`，报告→`辅助文件/报告/curator-tools/`，备份→`辅助文件/备份/`），物理保留、不入 Git；下述 `_curator_tools/` 路径在文中作为治理规则描述保留，实际位置以归档后为准。
+> 本文件定义本知识发布包的 Obsidian Vault 治理边界与质量要求。目标是让知识层完整 Obsidian 化、可被 Agent 机器解析，同时避免工具、备份、历史报告污染知识图谱或被误判为当前事实。
+> **Vault Root = 包内知识根（`LLMWikiPage/`）**。本文描述的目录结构、统计与路径均以发布包内实际分布为准，不从外部工作区硬编码任何路径。
 
 ## Vault Root
 
 ```text
-C:\Users\59559\Desktop\Agent\UdonSharpAgent\memory
+LLMWikiPage/           # 本包 Obsidian Vault Root（知识页根）
 ```
 
-`memory/` 是本工作区的 Obsidian Vault Root。Obsidian 写入、索引、链接治理默认限定在该目录内。
+Obsidian 写入、索引、链接治理默认限定在该根目录内。包外内容（源材料、工具、备份）不参与本库知识图谱。
 
 ## 治理层级
 
 ### A. 核心知识层（完整 Obsidian 化）
 
-范围：
+范围（当前物理目录即域边界）：
 
 ```text
-api/
-avatar/
-world/
-platform/
-hybrid/
-patterns/
-rules/
-vrchatsdk/
-misc/
-meta/
-FACT.md
-_always-load.md
-index.md
+entities/    # 实体域：api / avatar(含 shader) / platform / vrchatsdk / world
+concepts/    # 概念域：hybrid / misc / patterns / rules
+comparisons/ # 跨实体对比
+queries/     # 问答归档
+FACT.md / index.md / _always-load.md   # 顶层治理与导航
 ```
 
 治理要求：
 
-- 需要 YAML frontmatter / Obsidian Properties。
-- 需要稳定的 `tags`、`aliases`、`related`。
-- 应由 `index.md` 或局部 `index.md` 可达。
-- 应逐步使用 Obsidian wikilink 建立可点击关系。
-- 参与死链、孤立文档、入口可达性、Properties 可解析性审查。
+- 每页必须有可解析的 YAML frontmatter（title/type/category/tags/aliases/related/confidence/sources）。
+- `tags` 遵循标签分类法；`aliases`、`related` 用于检索与图谱。
+- 每页应可由 `index.md` 或所属域 `index.md` 索引可达。
+- 页间关系使用库内 wikilink（见「推荐 Wikilink 规则」）。
+- 参与死链、孤页、索引死链、frontmatter 合规、可解析性审查。
 
-### B. 参考 / 来源层（半 Obsidian 化）
+### B. 来源 / 参考层（包外，不随发布包分发）
 
-范围：
-
-```text
-sources/
-references/
-references/notes/
-reviews/
-```
-
-治理要求：
-
-- 需要保留来源、可信度、适用范围和晋升状态。
-- 需要父级入口或专题入口。
-- 不强制高密度互链。
-- 不应直接等同核心事实层。
-- 参考资料晋升为核心知识前，应经过验证、拆解和风险标注。
+- 源材料（raw 源、参考文献快照）以哈希账本锚定存放于包外，**不随本包分发**。
+- 知识页 `sources` 字段只允许 `http(s)://` URL 或可追溯的文字描述，**不得写本地文件路径**。
+- 参考资料晋升为核心知识前，须经验证、拆解与风险标注。
 
 ### C. 治理报告层（证据归档，不进入主知识网络）
 
-范围：
+- 审查报告、检查 JSON、审计记录存于包外审计目录，可作证据保留。
+- 不要求与核心知识相同的 `aliases` / `related` 完整度；不参与主知识图谱质量评分；不作为当前知识事实来源。
 
-```text
-_curator_tools/*.md
-历史审计报告
-验证报告
-死链报告
-修复报告
-```
+## 自包含硬性要求（v5.0.0 起）
 
-治理要求：
-
-- 可作为审计证据保留。
-- 不要求与核心知识笔记相同的 `aliases` / `related` 完整度。
-- 不应作为当前知识事实来源。
-- 不参与主知识图谱的质量评分。
-- 稳定的人类可读结论未来可迁入 `reviews/`，但迁移前不得删除原始证据。
-
-### D. 工具 / 机器产物层（不 Obsidian 化）
-
-范围：
-
-```text
-_curator_tools/*.py
-_curator_tools/**/*.py
-_curator_tools/**/*.json
-JOURNAL.jsonl
-*.jsonl
-```
-
-治理要求：
-
-- 按普通工程文件管理。
-- 不参与 Obsidian 笔记质量统计。
-- 不参与 graph / backlink / related 完整性审查。
-- 不作为当前知识事实来源。
-
-### E. 备份 / 恢复层（只读排除）
-
-范围：
-
-```text
-.backup/
-*.bak
-_curator_tools/**/*.bak
-```
-
-治理要求：
-
-- 只用于完整性比对、回滚和恢复。
-- 不进入主索引。
-- 不进入主知识图谱。
-- 不作为当前事实来源。
-- 从备份恢复内容前，必须先进行人工或 Agent 比对。
-
-### F. Obsidian 配置层（默认只读）
-
-范围：
-
-```text
-.obsidian/*.json
-*.base
-*.canvas
-```
-
-治理要求：
-
-- `.obsidian/*.json` 默认只读。
-- 未经明确授权，不修改 workspace、graph、appearance、app、core plugin 配置。
-- `.base` / `.canvas` 属于视图层对象，创建或修改前必须有明确用途和备份。
-
-## 改造前基线要求
-
-任何批量 Obsidian 化改造前，必须生成或更新基线：
-
-- 文件清单
-- SHA256
-- 文件大小
-- 修改时间
-- 所属治理层
-- Markdown frontmatter 状态
-- 标题数
-- 表格数
-- 代码块数
-- Markdown link 数
-- Wikilink 数
-
-当前阶段 A 基线入口：
-
-```text
-_curator_tools/obsidian_upgrade_manifest_2026-07-14.json
-_curator_tools/obsidian_upgrade_baseline_2026-07-14.md
-```
-
-## 改造后验收要求
-
-后续每一阶段完成后，至少检查：
-
-- 核心知识层无非预期 missing / added。
-- `.obsidian/*.json` 未被非预期修改。
-- `.backup/`、`*.bak` 未被误改。
-- 正文长度、标题数、表格数、代码块数无异常下降。
-- YAML frontmatter 可解析。
-- 死链不增加。
-- Wikilink / backlink / outgoing link 的可用性提高。
-- 参考层没有被误晋升为核心事实。
+- 库内**只允许两种引用**：`http(s)://` URL 与**指向本包 `LLMWikiPage/` 内部**的文件链接/wikilink。
+- 禁止任何指向包外或本机文件系统的硬编码路径（例如带盘符的绝对路径、file 方案链接、跨层跳转相对路径、指向包外 raw 源材料层的路径文本等）。
+- 正文中的路径**示例**必须参数化（如 `<用户目录>\...`、`<安装盘>:\...`），不得出现具体盘符/用户名/工作区路径。
+- 死链（wikilink / 相对文件链接）与孤页必须为 0；站点相对 URL（缺主机）不得出现。
 
 ## 禁止事项
 
-- 禁止把整个 `memory/` 无差别套用同一套笔记质量规则。
-- 禁止将 `_curator_tools/`、`.backup/`、`.obsidian/` 纳入普通知识图谱治理。
+- 禁止把 `entities/`、`concepts/` 等知识层与治理/源层无差别套用同一套质量规则。
 - 禁止无基线执行批量改名、批量删除、批量链接重写。
 - 禁止把旧报告、备份文件或机器日志作为当前知识事实。
-- 禁止把所有路径无脑替换为裸 `［［index］］` 等可能歧义的 wikilink。
+- 禁止把所有路径无脑替换为裸 `[[index]]` 等可能歧义的 wikilink。
+- 禁止在 `sources` / `related` 中写入本地文件路径或包外路径。
 
-## Properties 字段语义规范
+## Properties 字段语义
 
 ### `related`
 
-`related` 只表示 **Vault 内部笔记关系**，应逐步使用 Obsidian 路径型 Wikilink：
+只表示 **Vault 内部知识页关系**，优先使用路径型 Wikilink：
 
 ```yaml
 related:
-  - "[[../entities/world/index.md]]"
-  - "[[../entities/api/networking.md]]"
+  - "[[entities/world/index.md]]"
+  - "[[entities/api/networking.md]]"
 ```
 
 规则：
 
-- 只放当前 `memory/` Vault 内真实存在的 Markdown 笔记。
-- 跨目录关系必须使用路径型 Wikilink，不使用裸 `［［index］］`、`［［overview］］`、`［［installation］］`。
-- 同目录短链接可在试点阶段保留，但新增关系优先写成 Vault-root 相对路径。
-- `related` 不承载来源路径、外部 URL、历史参考目录或工作区外文件。
+- 只放当前 `LLMWikiPage/` 内真实存在的页面。
+- 跨目录关系使用路径型 Wikilink；避免裸 `[[index]]`、`[[overview]]`。
+- `related` 不承载来源路径、外部 URL、历史参考目录或包外文件。
 
-### `source_path` / `external_reference` / `legacy_source`
+### `sources`
 
-当原 `related` 中出现以下内容时，不应直接转为 wikilink：
-
-- Vault 外路径，例如 `../../../（见源库 raw/ 目录）参考文献`。
-- 官方文档 root-absolute path，例如 `/worlds/udon/string-loading`。
-- 历史工作区路径或已迁移目录。
-- 不确定是否存在的规划文件。
-
-建议字段：
-
-```yaml
-source_path:
-  - "../../../（见源库 raw/ 目录）参考文献"
-external_reference:
-  - "https://creators.vrchat.com/worlds/udon/string-loading/"
-legacy_source:
-  - "旧路径，仅作追溯"
-```
-
-治理要求：来源字段可追溯，但不参与 Obsidian 主知识关系图谱评分。
+- 只允许 `http(s)://` URL（用 `|` 分隔多个）或文字来源描述。
+- 不写带盘符的绝对路径、跨层跳转相对路径文本或指向包外源材料层的路径；源材料层不随包分发。
 
 ## 推荐 Wikilink 规则
 
-由于 Vault 内存在大量同名文件，例如 `index.md`、`overview.md`、`installation.md`，后续 Obsidian 化应优先使用路径型 Wikilink：
+由于库内存在多个同名文件（`index.md`、`overview.md`、`installation.md` 等），**优先使用库根相对路径型 Wikilink**：
 
 ```md
-[[../entities/avatar/index.md]]
-[[../entities/world/udon/index.md]]
-[[../entities/api/networking.md]]
+[[entities/avatar/index.md]]
+[[entities/world/udon/index.md]]
+[[entities/api/networking.md]]
 ```
 
-避免裸链接（以下使用全角括号示意，防止被 Obsidian 识别为真实链接）：
+同一目录短链接可在试点保留，但新增关系一律写库根相对路径。
 
-```text
-［［index］］
-［［overview］］
-［［installation］］
-```
+## 质量审查门（发布前）
 
-## 当前状态摘要（2026-07-14，E+F 前全库复扫）
+每次发布前必须复跑并满足：
 
-> 统计为阶段 D 后、阶段 E+F 前的只读复扫结果。后续精确计数以 `_curator_tools/` 中最新阶段报告为准，避免本治理文件长期硬编码漂移。
+- C1 自包含：死链文件链接 0 / 死链 wikilink 0 / 站点相对 URL 0 / 畸形 wikilink 0 / 包外路径 0
+- C2 置信度：high/medium/low 缺失或非法 0
+- C3 Fact Index：孤页 0 / index 死链 0
+- C4 标签：tags 缺失 0 / 分类法外复用（≥2 次）0
 
-- 总文件：465
-- Markdown 文件：441
-- 有完整 frontmatter：435
-- 无有效 frontmatter：6，均位于 `_curator_tools/` 历史治理报告层
-- malformed frontmatter：0
-- Wikilink 总数：约 380
-- Markdown `.md` 链接总数：636
-- missing `.md` link candidate：4，均已分类为 Vault 外来源、治理报告历史链接或报告 diff 示例误报
-- root-absolute 官方路径：44，作为 `external_reference` / source 映射治理 backlog，不批量替换
-- `.base` / `.canvas`：未发现实际文件
-- `.obsidian` 配置文件：5 个，默认只读
+## 当前状态摘要（2026-08-20，发布复扫）
 
-## 后续阶段入口
+> 精确计数以发布审查报告为准（包外审计目录），本文件不长期硬编码漂移。
 
-当前 A-D 阶段已完成：
-
-- Phase A：安全基线与完整性复核
-- Phase B：低风险导航骨架补齐
-- Phase C：明确死链与错误相对路径修复
-- Phase D：Properties / `related` 字段试点
-
-后续优先维护：
-
-- Phase E：alias 与 Properties 轻治理
-- Phase F：治理状态摘要刷新
-- Phase G：治理报告层误报降噪
-- Phase H：`source_path` / `external_reference` 迁移试点
-- Phase I：导航可达性补强
-- Phase J：`related` 字段分批 Obsidian 化
-- Phase K：内容缺口建设
+- 知识页总数：414（entities 351 / concepts 47 / comparisons 6 / queries 1 / meta 6 + 顶层 3）
+- frontmatter 合规 100%
+- 死链 0 / 孤页 0（发布口径）
+- 分类法 150；无 ≥2 次分类法外复用
+- 本文件 v2.0（2026-08-20）起，治理规则与现行 `LLMWikiPage/` 拓扑对齐

@@ -297,7 +297,7 @@ void CopyIntoFlags()
 
 - （来源：Open Source Projects，本地整理） §音频同步类目
 
-如需了解项目安装、VPM 配置、源码版本,参阅 （见源库 sources/ 目录） 目录
+如需了解项目安装、VPM 配置、源码版本,参阅 源资料归档层（不随发布包分发） 目录
 
 ---
 
