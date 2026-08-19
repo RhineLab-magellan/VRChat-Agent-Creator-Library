@@ -11,8 +11,11 @@ from collections import defaultdict
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-CURRENT = Path('C:/CherryStudio/Agent/UdonSharpAgent/memory')
-BACKUP = Path('C:/CherryStudio/Agent/UdonSharpAgent/知识库备份/memory v1.0.0/memory')
+# 使用脚本自身位置推导路径，避免硬编码
+SCRIPT_DIR = Path(__file__).resolve().parent  # Auxiliary script/
+PROJECT_ROOT = SCRIPT_DIR.parent  # UdonSharpAgent/
+CURRENT = PROJECT_ROOT / 'memory'
+BACKUP = PROJECT_ROOT / '知识库备份' / 'memory v1.0.0' / 'memory'
 
 
 def get_h3_sections(content):
