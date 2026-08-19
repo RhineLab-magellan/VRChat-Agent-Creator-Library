@@ -5,7 +5,7 @@
 ### 形态转型
 - 从「SOUL + Memory 工作库」转为「纯知识发布包」：知识根 = `memoryV5.0.0/LLMWikiExample/LLMWikiPage/`（414 个 Markdown 知识页，约 3.90 MB）
 - 目录重构为 `entities`（351）`concepts`（47）`comparisons`（6）`queries`（1）`meta`（6）+ 顶层 `FACT.md`/`index.md`/`_always-load.md`
-- 全库自包含：仅依赖可解析 `[[wikilink]]` 与 `http(s)://` URL，无本地路径依赖（10 页绝对路径示例 + 4 页 raw 软锚点为决策保留项）
+- 全库自包含：仅依赖可解析 `[[wikilink]]` 与 `http(s)://` URL，**零硬编码本地路径**（正文路径示例已参数化，无个人路径）
 
 ### 内容增量（2026-08）
 - Unity 场景组件专页约 45 页（AudioSource/Light/NavMeshAgent/ParticleSystem/RigidBody/Collider/Joint/Camera/Canvas/Renderer/VideoPlayer 等）
@@ -14,6 +14,7 @@
 
 ### 质量治理
 - 发布就绪四指标全过（`publish-readiness-check.py` 幂等验证）：
+- **审查循环修复轮**（修复后全指标复跑归零）：绝对路径示例参数化（10 页→0）；soft raw 锚点改公开 URL/抽象描述（4→0）；vrchatsdk 18 页 `source` 补全真实官方/社区 URL；全库旧工作库层（raw/sources/references/reviews）路径文本清除（44 文件）；obsidian-governance 重写（去个人路径、拓扑对齐）；queries 归档填充 5 条真实问答；重复 tag 清除；库内相对路径提示全量解析校验 0 缺失。复跑：C1–C4 全门 0，factcheck 锚定缺口 0，site-scan 死链 0。
   - C1 自包含：死链文件链接 0 / 站点相对 URL 0 / wikilink 死链 0
   - C2 置信度：非法值 0（high 204 / medium 208 / low 2，low 已带来源+理由）
   - C3 Fact Index：孤页 0 / index 死链 0（FACT.md 结构树 = 44 目录）

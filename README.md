@@ -14,7 +14,7 @@
 
 ## 📖 简介
 
-**VRChat-Agent-Open-Memory-Library v5.0.0** 是以「**自包含知识发布包**」为目标的 VRChat 创作者知识库。它由长期工作库（memoryV4.0.0，已归档）整理为 **LLMWikiPage 结构**：414 个 Markdown 知识页，全部使用 `[[相对wikilink]]`/相对链接/`http(s)://` URL 相互连接，**不依赖任何本地路径**（仅 10 页含 `C:\...` 路径属正文示例、4 页 sources 保留 raw 软锚点，均已注明）。
+**VRChat-Agent-Open-Memory-Library v5.0.0** 是以「**自包含知识发布包**」为目标的 VRChat 创作者知识库。它由长期工作库（memoryV4.0.0，已归档）整理为 **LLMWikiPage 结构**：414 个 Markdown 知识页，全部使用 `[[相对wikilink]]`/相对链接/`http(s)://` URL 相互连接，**零硬编码本地路径**（正文路径示例已参数化，无个人路径；包内 soft raw 锚点已改写为公开 URL/抽象描述）。
 
 - **414 个** Markdown 知识页，约 3.90 MB
 - **四指标发布就绪**（`publish-readiness-check.py` 复跑验证）：C1 自包含（死链 0 / 站点相对 URL 0）· C2 置信度（非法 0）· C3 Fact Index（孤页 0 / 索引死链 0）· C4 标签（0 缺失 / 分类法 150）
@@ -210,8 +210,8 @@ boot_files:
 | C3 Fact Index | 孤页 = 0；index 死链 = 0 | ✅ 0 / 0 |
 | C4 标签 | tags 缺失 = 0；分类法 150；分类法外复用（≥2 次）= 0 | ✅ 0 |
 
-> 交叉口径：site-scan 知识域 363 页（死链 0 / frontmatter 100%）、factcheck-audit 411 页（sources 结构化锚定率 25.1%，属治理层已知短板，见报告）。
-> 已知保留项（决策未执行，非缺陷）：10 页 `C:\...` 绝对路径**示例**、4 页 sources→raw 软锚点。
+> 交叉口径：site-scan 知识域 363 页（死链 0 / frontmatter 100%）、factcheck-audit 411 页（sources 结构化锚定率 29.4%，锚定缺口 0）。
+> 已知保留项（修复轮后终态，非缺陷）：绝对路径示例已参数化、soft raw 锚点已改公开 URL/抽象描述，全库零硬编码本地路径；2 页 low 置信（定性参考 / 草稿）诚实标注。
 
 ---
 
