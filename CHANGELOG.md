@@ -1,5 +1,39 @@
 # Changelog
 
+## v5.0.0 (2026-08-20) — LLMWikiPage 自包含知识发布包
+
+### 形态转型
+- 从「SOUL + Memory 工作库」转为「纯知识发布包」：知识根 = `memoryV5.0.0/LLMWikiExample/LLMWikiPage/`（414 个 Markdown 知识页，约 3.90 MB）
+- 目录重构为 `entities`（351）`concepts`（47）`comparisons`（6）`queries`（1）`meta`（6）+ 顶层 `FACT.md`/`index.md`/`_always-load.md`
+- 全库自包含：仅依赖可解析 `[[wikilink]]` 与 `http(s)://` URL，无本地路径依赖（10 页绝对路径示例 + 4 页 raw 软锚点为决策保留项）
+
+### 内容增量（2026-08）
+- Unity 场景组件专页约 45 页（AudioSource/Light/NavMeshAgent/ParticleSystem/RigidBody/Collider/Joint/Camera/Canvas/Renderer/VideoPlayer 等）
+- 工具页：udonsharp-linter、unity-mcp、dressing-tools、gesture-manager、lilycal-inventory、faceemo、runtime-texture-compression、physbones、avatar-audit-methodology
+- API/组件：vrc-billboard、unity-audio-filters、unity-constraints、unity-rendering-aux、vrc-rendertexture
+
+### 质量治理
+- 发布就绪四指标全过（`publish-readiness-check.py` 幂等验证）：
+  - C1 自包含：死链文件链接 0 / 站点相对 URL 0 / wikilink 死链 0
+  - C2 置信度：非法值 0（high 204 / medium 208 / low 2，low 已带来源+理由）
+  - C3 Fact Index：孤页 0 / index 死链 0（FACT.md 结构树 = 44 目录）
+  - C4 标签：缺失 0 / 分类法 150 / 分类法外复用（≥2 次）0
+- 交叉口径：site-scan 知识域 363 页（死链 0 / frontmatter 100%）；factcheck-audit 411 页
+
+### 结构变更
+- 移除旧 `memory v3.0.0/` 工作库目录
+- 工作库 `memoryV4.0.0/`（466 文件）归档（不随发布包分发）
+- 治理层（reviews/_curator_tools/.obsidian/备份/源注册表）不随发布包携带，治理内容收敛至 `meta/`
+
+---
+
+## v4.0.0 (2026-07—08) — 工作库阶段（未对外发布）
+
+- 保留 v3 拓扑的持续建设：新容器/工具/组件页、治理沉淀、Obsidian 审计
+- 作为 v5.0.0 的数据源工作库（466 文件），未单独打版发布
+
+---
+
 ## v3.0.0 (2026-07-01)
 
 ### 内容规模化扩张
