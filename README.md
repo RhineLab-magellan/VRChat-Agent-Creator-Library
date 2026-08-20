@@ -14,7 +14,7 @@
 
 ## 📖 简介
 
-**VRChat-Agent-Open-Memory-Library v5.0.0** 是以「**自包含知识发布包**」为目标的 VRChat 创作者知识库。它由长期工作库（memoryV4.0.0，已归档）整理为 **LLMWikiPage 结构**：414 个 Markdown 知识页，全部使用 `[[相对wikilink]]`/相对链接/`http(s)://` URL 相互连接，**零硬编码本地路径**（正文路径示例已参数化，无个人路径；包内 soft raw 锚点已改写为公开 URL/抽象描述）。
+**VRChat-Agent-Creator-Library v5.0.0** 是以「**自包含知识发布包**」为目标的 VRChat 创作者知识库。它由长期工作库（memoryV4.0.0，已归档）整理为 **LLMWikiPage 结构**：414 个 Markdown 知识页，全部使用 `[[相对wikilink]]`/相对链接/`http(s)://` URL 相互连接，**零硬编码本地路径**（正文路径示例已参数化，无个人路径；包内 soft raw 锚点已改写为公开 URL/抽象描述）。
 
 - **414 个** Markdown 知识页，约 3.90 MB
 - **四指标发布就绪**（`publish-readiness-check.py` 复跑验证）：C1 自包含（死链 0 / 站点相对 URL 0）· C2 置信度（非法 0）· C3 Fact Index（孤页 0 / 索引死链 0）· C4 标签（0 缺失 / 分类法 150）
@@ -30,7 +30,7 @@
 ## 🗂️ 目录结构
 
 ```
-VRChat-Agent-Open-Memory-Library/
+VRChat-Agent-Creator-Library/
 │
 ├── README.md                  # 📖 本文件
 ├── CHANGELOG.md               # 📝 版本更新日志
@@ -118,7 +118,7 @@ updated: 2026-08-20
 
 ### 1. Ollama/LangChain/RAG 向量化（推荐）
 
-把 `memoryV5.0.0/LLMWikiExample/LLMWikiPage/` 作为知识根喂给切块管线；每页 frontmatter 提供 `tags`/`type`/`confidence`，链接为 `[[相对wikilink]]` 或 URL（可直接用 Obsidian/graph 渲染，也可用 `[[title]]` 拆分为检索标签）。
+把 `memoryV5.0.0/` 作为知识根喂给切块管线；每页 frontmatter 提供 `tags`/`type`/`confidence`，链接为 `[[相对wikilink]]` 或 URL（可直接用 Obsidian/graph 渲染，也可用 `[[title]]` 拆分为检索标签）。
 
 ### 2. Cursor / Claude Code / Copilot
 
