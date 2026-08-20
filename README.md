@@ -36,9 +36,8 @@ VRChat-Agent-Open-Memory-Library/
 ├── CHANGELOG.md               # 📝 版本更新日志
 ├── LICENSE                    # 📜 MIT License
 │
-├── memoryV5.0.0/              # ⭐ 知识发布包
+├── memoryV5.0.0/              # ⭐ 知识发布包（GitHub Release 仅分发此文件夹）
 │   ├── README-发布说明.md       #   发布说明（就绪判定口径）
-│   ├── 发布检查报告-2026-08-20.md # 发布就绪检查报告
 │   └── LLMWikiExample/
 │       └── LLMWikiPage/       # 📚 知识页根（414 md，唯一知识入口）
 │           ├── FACT.md            # 知识库结构树 + 核心约束 + 长期事实
@@ -50,6 +49,7 @@ VRChat-Agent-Open-Memory-Library/
 │           ├── queries/     (1)   # 优质问答归档
 │           └── meta/        (6)   # 治理协议：working-modes/kb-protocol/obsidian-governance 等
 │
+├── reports/                   # 📋 审查/发布就绪报告（不随发布包分发）
 ├── Auxiliary script/          # 🔧 历史维护脚本（治理/审计/迁移工具）
 └── Training data/             # 📤 社区贡献入口（贡献指南见下方）
 ```
@@ -212,6 +212,8 @@ boot_files:
 
 > 交叉口径：site-scan 知识域 363 页（死链 0 / frontmatter 100%）、factcheck-audit 411 页（sources 结构化锚定率 29.4%，锚定缺口 0）。
 > 已知保留项（修复轮后终态，非缺陷）：绝对路径示例已参数化、soft raw 锚点已改公开 URL/抽象描述，全库零硬编码本地路径；2 页 low 置信（定性参考 / 草稿）诚实标注。
+>
+> 📋 **独立 V5 审查（2026-08-20）**：连接自包含复查确认 **本地文件连接 = 0**（库内相对路径可接受，全库自包含），四指标独立复跑全门 0（幂等 SHA 一致）。审查报告见 [`reports/V5独立审查报告-2026-08-20.md`](reports/V5%E7%8B%AC%E7%AB%8B%E5%AE%A1%E6%9F%A5%E6%8A%A5%E5%91%8A-2026-08-20.md) 与 [`reports/发布检查报告-2026-08-20.md`](reports/%E5%8F%91%E5%B8%83%E6%A3%80%E6%9F%A5%E6%8A%A5%E5%91%8A-2026-08-20.md)；报告存放于仓库根 `reports/`，**不随发布包分发**（Release 仅含 `memoryV5.0.0/`）。
 
 ---
 
