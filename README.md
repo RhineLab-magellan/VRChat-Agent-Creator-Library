@@ -1,4 +1,4 @@
-# VRChat-Agent-Open-Memory-Library
+# VRChat-Agent-Creator-Library
 
 > 🧠 **VRChat 专属 AI Agent 开放记忆库 v5.0.0** — LLMWikiPage 自包含知识包 · 机器可解析 · 多领域 VRChat 创作者知识体系
 
