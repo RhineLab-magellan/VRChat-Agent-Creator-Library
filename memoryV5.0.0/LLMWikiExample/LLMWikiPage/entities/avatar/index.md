@@ -30,6 +30,7 @@ related:
   - "[[tex-trans-tool.md]]"
   - "[[vrcfury-reference.md]]"
   - "[[ma2bt.md]]"
+  - "[[avatar-optimization-stack.md]]"
   - "[[avatar-parameter-staged-sync.md]]"
   - "[[ma-component-cards.md]]"
   - "[[contact.md]]"
@@ -69,7 +70,7 @@ updated: 2026-07-04
 | 分类 | 入口 | 说明 |
 |---|---|---|
 | 核心系统 | [[animator-system.md]] · [[playable-layers.md]] · [[vrc-constraints.md]] · [[contact.md]] · [[expression-menu.md]] | Avatar 3.0、Animator、Constraint、Contact、Expression |
-| 优化与性能 | [[performance-rank.md]] · [[optimization-guide.md]] · [[avatar-optimizer.md]] · [[ndmf-tools.md]] · [[lac-avatar-compressor.md]] | PC/Quest 性能、NDMF 工具、贴图/网格/组件优化 |
+| 优化与性能 | [[performance-rank.md]] · [[optimization-guide.md]] · [[avatar-optimizer.md]] · [[ndmf-tools.md]] · [[lac-avatar-compressor.md]] · [[avatar-optimization-stack.md]] | PC/Quest 性能、NDMF 工具、贴图/网格/组件优化、**7 工具组合与共存风险** |
 | Shader | [[shader/index.md]] · [[shader/liltoon/index.md]] · [[shader/poiyomi/index.md]] · [[shader/orl/index.md]] · [[shader/filamented/index.md]] · [[shader/unlitwf/index.md]] | Avatar Shader 选择与专题入口 |
 | 工具与改模 | [[modular-avatar.md]] · [[vrcfury-reference.md]] · [[teaching-methodology.md]] · [[avatar-modding-guide.md]] | MA / VRCFury / 教学与改模流程 |
 | 摄影与相机 | [[camera-tools.md]] · [[camera-tools-virtuallens2.md]] · [[camera-tools-vrclens.md]] · [[integral-camera-params.md]] | 玩家本地相机工具与参数 |
@@ -95,6 +96,7 @@ updated: 2026-07-04
 | **[tex-trans-tool.md](tex-trans-tool.md)** ⭐NEW | **TexTransTool (TTT)** - 非破坏纹理改写工具完整知识库(15 组件 + AtlasTexture 完整参数表 + Quest 适配 + 与 AAO 协作 + v0.10.0/v1.0.0 破坏性变更 + 故障排查) | ReinaS-64892 官方 + ttt.rs64.net (2026-06-17) |
 | **[vrcfury-reference.md](vrcfury-reference.md)** ⭐深度更新 | VRCFury 完整参考：Parameter Compressor (16 bit 压参数) + Direct Tree Optimizer (减层数) + Blendshape Optimizer (减 VRAM) + Fix Write Defaults + Actions 系统 + 60+ 自动修复 + SPS + 全组件清单 + Quest 兼容 + MA/d4rk 共存 + 优化场景对比矩阵(含 d4rk) | 官网 + 仓库 + PR#238 (2026-06-17) |
 | **[ma2bt.md](ma2bt.md)** ⭐NEW | **MA2BT** (Modular Avatar to BlendTree) - 将 MA 响应式层合并为 Direct BlendTree 减少 FX 层数（Compact Mode / Multi-State / Scan All Layers 选项 + 完整跳过原因枚举 + 与 AAO 互补关系 + 16 节完整知识库） | Null-K 官方仓库 v2.0.2 (2026-06-17) |
+| **[avatar-optimization-stack.md](avatar-optimization-stack.md)** ⭐NEW 2026-10-24 | **Avatar 优化工具链组合指南** - 7 工具（AAO/Meshia/TTT/LAC/VRCFury/MA2BT/Thry）职责矩阵 + 8 项冲突与张力清单 + 三批启用顺序 + 撤换排查法 + 8 条常见误区纠正 | 各项目 README/package.json（`[PROJECT-SOURCE]`）(2026-10-24) |
 | **[avatar-fallback-system.md](avatar-fallback-system.md)** ⭐NEW 2026-06-30 | Avatar Fallback 系统完整指南（5 种 Fallback 触发原因 + 自定义 Fallback 上传流程 + Grandfathered 规则 + 完整 FAQ + 文件大小 vs VRAM 区分） | VRChat 官方 docs (2026-06-30) |
 | **[avatar-dynamic-bone-limits.md](avatar-dynamic-bone-limits.md)** ⭐NEW 2026-06-30 | 用户端 Dynamic Bone Limits 系统（默认值 32/8 + config.json 完整配置 + 与 Performance Rank 区分 + Quest 行为） | VRChat 官方 docs (2026-06-30) |
 | **[avatar-particle-system-limits.md](avatar-particle-system-limits.md)** ⭐NEW 2026-06-30 | 用户端 Particle System Limits 系统（11 个配置变量 + Penalty 计算公式 + Quest 默认启用且不可禁用 + PlayerLocal 碰撞限制） | VRChat 官方 docs (2026-06-30) |
