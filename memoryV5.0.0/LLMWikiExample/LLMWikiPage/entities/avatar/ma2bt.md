@@ -5,8 +5,8 @@ knowledge_level: applied
 status: active
 source: "github.com/Null-K/MA2BT"
 source_type: community
-version: 1.0
-last_review: 2026-06-20
+version: 1.1
+last_review: 2026-10-24
 confidence: Medium
 tags:
   - avatar
@@ -25,8 +25,8 @@ related:
   - avatar-modding-guide.md
 type: entity
 created: 2026-06-20
-sources: "github.com/Null-K/MA2BT"
-updated: 2026-06-20
+sources: "github.com/Null-K/MA2BT | https://github.com/zhuozhi233/MA2BT-Pro"
+updated: 2026-10-24
 ---
 # MA2BT (Modular Avatar to BlendTree)
 
@@ -513,7 +513,95 @@ const string MA_RESPONSIVE_PREFIX  = "MA Responsive: ";
 
 ---
 
-## 15. 相关文档（Cross-Reference）
+## 17. 分叉对比：MA2BT-Pro（zhuozhi233 fork）
+
+> `[PROJECT-SOURCE]` 来源：`zhuozhi233/MA2BT-Pro` 的 README 与 `package.json`（v1.3.0）
+> URL: https://github.com/zhuozhi233/MA2BT-Pro | 访问日期 2026-10-24
+>
+> ⚠️ **这是与本页正文不同的另一个包**。上文的包名、VPM 源、选项默认值均指 **上游 `Null-K/MA2BT`**；
+> 本节的数值只适用于 **MA2BT-Pro**，二者**不可混用**。
+
+### 17.1 两者是什么关系
+
+| 维度 | MA2BT（上游，本页正文） | MA2BT-Pro（分叉） |
+|------|------------------------|-------------------|
+| 仓库 | `Null-K/MA2BT` | `zhuozhi233/MA2BT-Pro`（**fork**，`fork: true`） |
+| 维护者 | Null-K / PuddingKC | 浊鸷（zhuozhi233） |
+| VPM 包名 | `com.puddingkc.ma2bt` | **`com.zhuozhi.ma2bt-pro`** |
+| VPM 仓库 | `https://null-k.github.io/vpm-listing/index` | **`https://zhuozhi233.github.io/vpm-listing/index.json`** |
+| 版本（查证时） | v2.0.2 | **v1.3.0** |
+| 依赖 | Unity 2022.3 / SDK 3.x / MA ≥1.10 / NDMF ≥1.4 | Unity 2022.3 / SDK 3.x / MA **≥1.10** / NDMF **≥1.9.0** |
+| 注入层名 | `MA_To_BlendTree_Layer` | `MA_To_BlendTree_Layer`（**同名**） |
+| License | Unlicense | Unlicense |
+
+> 💡 因两者**注入层同名**，二者**功能重叠且不应同时安装**——同时存在会把同一批 `MA Responsive:` 层重复处理。
+
+**Pro 的自述定位**：保留上游"把 MA 响应式层转 BlendTree"的核心思路，增加面向复杂项目的扩展与保护逻辑；**无法安全转换时保留原图层，不强制处理**。
+
+### 17.2 Pro 相对上游增加的扩展
+
+| 扩展 | 说明 |
+|------|------|
+| 多状态图层支持增强 | 允许转换包含多个条件状态的图层 |
+| Bool / Int 参数转换与保护 | 增强 Bool/Int 条件处理，并对无法安全迁移的参数加保护 |
+| Bool / Int 条件重写保留 | 支持保留图层中的 Bool/Int 条件重写 |
+| 合并相同结构的混合树与动画 | 多个图层的多状态参数结构完全一致时，合并为同一嵌套混合树并合并相同状态动画 |
+| **前缀排除** | 图层名 / 状态名 / 参数名可配置前缀排除 |
+| 详细 Console 日志 | `[MA2BT Pro]` 逐条输出跳过原因，便于排查 |
+| 扫描所有 FX 图层（可选） | 默认关闭；开启后也会尝试处理部分手动制作的简单图层 |
+
+### 17.3 Pro 的选项与默认值（与上游不同，注意区分）
+
+| 选项（中文界面） | 默认值 | 说明 |
+|------------------|--------|------|
+| **紧凑模式** | **开启** | 只生成需要的阈值，减少多余节点 |
+| **多状态图层** | **开启**（上游默认关闭） | 允许转换包含多个条件状态的图层 |
+| **合并相同混合树 / 动画** | **开启** | 结构完全一致时合并嵌套混合树与同名动画 |
+| **扫描所有图层** | 关闭 | 不仅扫描 MA 生成的层，也尝试扫描所有 FX 图层 |
+
+**排除项默认值**：
+
+| 排除项 | 默认值 |
+|--------|--------|
+| 图层名前缀排除 | `lilycalInventory`、`AutoDresser` |
+| 状态名前缀排除 | `Root`、`root` |
+| 参数名前缀排除 | （空） |
+
+> ⚠️ 上游本页 §16 速查表记录的默认值是 `Multi-State Layers = false`、`Scan All Layers = false`。
+> **Pro 的"多状态图层"默认是开启的**——切换工具时务必重新核对此项，否则转换范围会比预期更大。
+
+### 17.4 Pro 的跳过原因（何时会保留原图层）
+
+Pro 不会"强行转换"。以下条件会保留原图层并在 Console 输出原因：
+
+| 类别 | 具体原因 |
+|------|----------|
+| 扫描范围 | 图层不符合扫描范围（默认只扫 `MA Responsive:` 前缀） |
+| 前缀排除 | 图层名 / 状态名 / 参数名命中排除列表 |
+| 结构缺失 | 状态数量不足、没有默认状态、没有可解析的 Entry Transition |
+| 选项限制 | 多状态图层存在但该选项被关闭 |
+| 不安全内容 | 存在 StateMachineBehaviour；存在复杂过渡 / 不支持的 AnyState 结构 |
+| 过渡设置不安全 | Transition Duration ≠ 0、Offset ≠ 0、Exit Time 不符合要求 |
+| 状态设置不安全 | 启用了 Speed Multiplier / Motion Time / Mirror / Cycle Offset / Foot IK |
+| 条件无法解析 | 参数缺失、类型不支持、无法转成 BlendTree 可用范围 |
+| Int 条件不合规 | 使用 `NotEqual`，或 `Equals` 阈值非整数 |
+| 参数共享冲突 | Bool/Int 参数同时被其他保留图层使用且无法安全改写 |
+| 版本过旧 | 缺少所需 API 时**跳过全部优化**并在 Inspector 显示错误 |
+
+> 💡 这与上游本页 §2 记录的跳过原因基本同构，但 Pro 增加了**前缀排除**与**参数共享冲突**两类。
+
+### 17.5 选型建议（经验性，标 `[INFERENCE]`）
+
+| 场景 | 建议 |
+|------|------|
+| 项目简单、只需要"把 MA 层塞进一个 BlendTree" | 上游 **MA2BT** 足够，选项少、行为更可预测 |
+| 项目复杂、图层包含多状态，或需要排除特定前缀（如 `lilycalInventory`） | **MA2BT-Pro** 的排除项与多状态支持更实用 |
+| 需要排查"为什么这层没被转换" | Pro 的 `[MA2BT Pro]` 日志粒度更细 |
+| **两者二选一** | ✅ 必须；因注入层同名，不应同时安装 |
+
+---
+
+## 18. 相关文档（Cross-Reference）
 
 | 文档 | 关系 |
 |------|------|
@@ -549,6 +637,10 @@ const string MA_RESPONSIVE_PREFIX  = "MA Responsive: ";
 │ 根直混参数: zhz/1 (硬编码)                                    │
 ├──────────────────────────────────────────────────────────────┤
 │ 不支持: Equals/NotEqual / 多参数 AND / 子状态机 / AnyState    │
+├──────────────────────────────────────────────────────────────┤
+│ ⚠️ 本速查表仅适用上游 MA2BT (com.puddingkc.ma2bt)             │
+│    分叉 MA2BT-Pro 包名=com.zhuozhi.ma2bt-pro，默认值不同      │
+│    Pro 的「多状态图层」默认=开启，详见 §17                    │
 ├──────────────────────────────────────────────────────────────┤
 │ 反馈: 简体中文 QQ群 1047423396 / 其他 GitHub Issues          │
 └──────────────────────────────────────────────────────────────┘
