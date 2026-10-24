@@ -5,8 +5,8 @@ knowledge_level: applied
 status: active
 source: "Thryrallo/VRC-Avatar-Performance-Tools v1.3.7 (AvatarEvaluator.cs + TextureVRAM.cs)"
 source_type: community
-version: 1.0
-last_review: 2026-06-20
+version: 1.1
+last_review: 2026-10-24
 confidence: High
 tags:
   - avatar
@@ -24,7 +24,7 @@ related:
 type: entity
 created: 2026-06-20
 sources: "Thryrallo/VRC-Avatar-Performance-Tools v1.3.7 (AvatarEvaluator.cs + TextureVRAM.cs)"
-updated: 2026-06-20
+updated: 2026-10-24
 ---
 # Thry Avatar Evaluator 7 项指标完整阈值
 
@@ -35,6 +35,27 @@ updated: 2026-06-20
 本文档是 VRChat 官方 Performance Rank 系统(`performance-rank.md`)的**重要补充**。官方系统只检测基础指标,而 **Thry Avatar Evaluator** 检测了 7 项官方未覆盖或检测方式不同的关键指标。
 
 **使用建议**:优化 Avatar 时,**同时运行两个工具**——官方 Performance Rank + Thry Evaluator。
+
+### 工具性质边界（非 NDMF 插件）
+
+> `[PROJECT-SOURCE]` 来源：`Thryrallo/VRC-Avatar-Performance-Tools` 的 `package.json`（v1.3.7）+ 仓库目录结构
+> URL: https://github.com/Thryrallo/VRC-Avatar-Performance-Tools | 访问日期 2026-10-24 | 版本 1.3.7
+
+Thry 工具**不属于 NDMF 工具链**，与 AAO / MA / TexTransTool / Meshia / LAC 等构建期插件性质不同：
+
+| 判据 | 本工具实际值 | 含义 |
+|------|--------------|------|
+| `package.json` 的 `vpmDependencies` | **`{}`（空）** | 不声明 NDMF、不声明任何 VPM 依赖 |
+| `package.json` 的 `type` | **`tool`** | 声明为编辑器工具，而非运行期/构建期插件 |
+| 仓库目录结构 | 仅 `Editor/`（无 `Runtime/` 程序集） | 只产出编辑器右键菜单命令，不参与运行期 |
+| NDMF API 使用 | 未引用 `nadena.dev.ndmf` | 不注册 NDMF 插件、不参与 NDMF 构建管线 |
+
+**结论**：
+
+- 本工具**不进入 NDMF 构建管线、不参与 Avatar 构建（Build / Play Mode 优化）**；
+- 它提供的是**编辑器内的测量与报告**（右键 `Thry/Avatar/Evaluator` 与 `Thry/Avatar/VRAM` 菜单），只读取与统计，不修改资产；
+- 因此它**不改变任何一个性能指标本身**，只用于**测量与定位**——优化动作仍需 AAO / Meshia / TTT / LAC / MA2BT / VRCFury 等构建期工具完成；
+- 归类上应与 lilAvatarUtils 同层（"检测 / 诊断"），而非与 AAO 同层（"构建期优化"）。
 
 ---
 
