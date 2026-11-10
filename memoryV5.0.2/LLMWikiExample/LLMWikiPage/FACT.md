@@ -62,7 +62,7 @@ LLMWikiPage/                     # 知识页根（现行知识库）
 │   └── rules/                   # UdonSharp 语言/工程规则（10 个文件）
 ├── entities/                    # 实体域
 │   ├── api/                     # API 参考（19 个文件）
-│   ├── avatar/                  # Avatar 域（63 个文件 + shader 子域）
+│   ├── avatar/                  # Avatar 域（65 个文件 + shader 子域）
 │   │   └── shader/              # Shader 知识库
 │   │       ├── filamented/      # Filamented PBR 着色器（3 个文件）
 │   │       ├── liltoon/         # lilToon 详细文档（17 个文件）

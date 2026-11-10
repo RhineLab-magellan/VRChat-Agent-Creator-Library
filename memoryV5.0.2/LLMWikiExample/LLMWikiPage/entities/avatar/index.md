@@ -5,8 +5,8 @@ knowledge_level: applied
 status: active
 source: 本地知识库整理
 source_type: community
-version: 1.10
-last_review: 2026-07-04
+version: 1.11
+last_review: 2026-11-10
 confidence: Medium
 tags:
   - misc
@@ -25,6 +25,7 @@ related:
   - "[[avatar-optimizer.md]]"
   - "[[optimization-guide.md]]"
   - "[[teaching-methodology.md]]"
+  - "[[menu-display-name-resolution.md]]"
   - "[[modular-avatar.md]]"
   - "[[modular-avatar-tutorials-detailed.md]]"
   - "[[tex-trans-tool.md]]"
@@ -61,7 +62,7 @@ related:
 type: entity
 created: 2026-07-04
 sources: 本地知识库整理
-updated: 2026-07-04
+updated: 2026-11-10
 ---
 # Avatar Domain — Knowledge Base
 
@@ -72,7 +73,7 @@ updated: 2026-07-04
 | 核心系统 | [[animator-system.md]] · [[playable-layers.md]] · [[vrc-constraints.md]] · [[contact.md]] · [[expression-menu.md]] | Avatar 3.0、Animator、Constraint、Contact、Expression |
 | 优化与性能 | [[performance-rank.md]] · [[optimization-guide.md]] · [[avatar-optimizer.md]] · [[ndmf-tools.md]] · [[lac-avatar-compressor.md]] · [[avatar-optimization-stack.md]] | PC/Quest 性能、NDMF 工具、贴图/网格/组件优化、**7 工具组合与共存风险** |
 | Shader | [[shader/index.md]] · [[shader/liltoon/index.md]] · [[shader/poiyomi/index.md]] · [[shader/orl/index.md]] · [[shader/filamented/index.md]] · [[shader/unlitwf/index.md]] | Avatar Shader 选择与专题入口 |
-| 工具与改模 | [[modular-avatar.md]] · [[vrcfury-reference.md]] · [[teaching-methodology.md]] · [[avatar-modding-guide.md]] | MA / VRCFury / 教学与改模流程 |
+| 工具与改模 | [[modular-avatar.md]] · [[menu-display-name-resolution.md]] · [[vrcfury-reference.md]] · [[teaching-methodology.md]] · [[avatar-modding-guide.md]] | MA / VRCFury / 教学与改模流程、菜单显示名来源 |
 | 摄影与相机 | [[camera-tools.md]] · [[camera-tools-virtuallens2.md]] · [[camera-tools-vrclens.md]] · [[integral-camera-params.md]] | 玩家本地相机工具与参数 |
 | 边界与跨域 | [[../../concepts/hybrid/avatar-world-boundaries.md]] · [[../../concepts/hybrid/avatar-world-contact-bridge.md]] · [[../../concepts/hybrid/player-observation-boundaries.md]] | Avatar 与 World 交互边界 |
 
@@ -129,6 +130,7 @@ updated: 2026-07-04
 | **[avatar-modding-guide.md](avatar-modding-guide.md)** ⭐更新 2026-07-04 | VRChat Avatar 改模基础知识（...+ **§3.5 模型导入工作流** + **§4 SDK 面板诊断流程**）| 86vrchat + VRCD 蒸馏 + VRChat 官方 |
 | **[faceemo.md](faceemo.md)** ⭐NEW 2026-08-19 | **FaceEmo** - 面部表情创建与配置工具（Pattern/手势条件/Blink/LipSync/眼动；官方 1.7.0 条件系统：手形×手势；生成式非破坏；经 MA 安装） | suzuryg 官方文档+仓库 |
 | **[lilycal-inventory.md](lilycal-inventory.md)** ⭐NEW 2026-08-19 | **lilycalInventory** - 非破坏衣柜/衣装切换工具（LI 组件族/物品切换/参数语义/NDMF 插件；v1.5.2） | lilxyzw 官方文档 |
+| **[menu-display-name-resolution.md](menu-display-name-resolution.md)** ⭐NEW 2026-11-10 | **LI 衣柜与 MA 菜单的显示名来源机制** - 组件级 2 级 / Costume 级 7 级 / MA label 2 级回退链 + Inspector 的 label↔GameObject 名绑定 + Unity 序列化转义（`\xNN` / `\uNNNN`）+ 批量改名的数组索引陷阱与安全写入流程 | lilxyzw/lilycalInventory 1.5.2 + nadena.dev/modular-avatar 1.18.7 源码实测（PR #5，2026-11-10 复核） |
 | **[dressing-tools.md](dressing-tools.md)** ⭐NEW 2026-08-19 | **DressingTools (DT2)** - poi-vrc 非破坏衣橱/cabinet 装配系统（One-click Dressing/Cabinet 动画/骨骼映射；v2.6.0） | poi-vrc 官方文档 |
 | **[gesture-manager.md](gesture-manager.md)** ⭐NEW 2026-08-19 | **Gesture Manager** - Unity 内 Avatar 动画预览/调试（simulator；证据须限定 Unity/GM preview；v3.9.8/3.9.9） | BlackStartx 官方 |
 | **[unity-mcp.md](unity-mcp.md)** ⭐NEW 2026-08-19 | **Unity MCP (MCP for Unity)** - AI↔Unity Editor 桥（三层架构/UPM 安装/Editor 状态≠运行时证据；CoplayDev v10） | MCP for Unity 官方 |
@@ -146,7 +148,7 @@ updated: 2026-07-04
 | **Testing** | Avatar 3.0 Emulator (lyuma) | ✅ 已收录 (avatar-30-emulator.md) ⭐NEW 2026-07-04 |
 | **Toggle Tools** | MA Object Toggle + 第三方工具生态 | ✅ 已收录 (modular-avatar.md + avatar-30-toggle-tools.md) ⭐NEW 2026-07-04 |
 | **SDK** | Avatar SDK, Modular Avatar | ✅ 已收录 |
-| **工具链与审计** | FaceEmo, lilycalInventory, DressingTools, Gesture Manager, Unity MCP | ✅ 已收录 ⭐2026-08-19 (faceemo.md / lilycal-inventory.md / dressing-tools.md / gesture-manager.md / unity-mcp.md) |
+| **工具链与审计** | FaceEmo, lilycalInventory, DressingTools, Gesture Manager, Unity MCP, LI/MA 菜单显示名 | ✅ 已收录 ⭐2026-08-19 / 2026-11-10 (faceemo.md / lilycal-inventory.md / dressing-tools.md / gesture-manager.md / unity-mcp.md / menu-display-name-resolution.md) |
 | **审计与证据** | avatar-audit-methodology.md — 7 级证据分层 + TOOLCHAIN_PROFILE + 授权矩阵 | ✅ 已收录 ⭐2026-08-19 |
 | **Optimization** | 性能等级, VRAM, NDMF 工具, 最佳化步骤 | ✅ 已收录 |
 | **Shader** | lilToon, Poiyomi, SCSS, Avatar Shader, 特殊效果 | ✅ 已收录 (liltoon/ + poiyomi/ + scss.md) |

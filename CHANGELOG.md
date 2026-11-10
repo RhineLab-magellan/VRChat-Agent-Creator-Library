@@ -10,6 +10,25 @@
 
 - 暂无待发布的变更。
 
+## [v5.0.2] - 2026-11-10 — 显示名机制新页 + 索引同步 + 目录版本号对齐
+
+> 版本号跳过 5.0.1（未单独发布），本批改动一并进入 v5.0.2。
+
+### Added
+- Avatar 域新页 `entities/avatar/menu-display-name-resolution.md`（贡献：@LinnnnYue，PR #5）：LI（lilycalInventory 1.5.2）与 MA（Modular Avatar 1.18.7）菜单显示名的来源与回退链——组件级 2 级、Costume 级 7 级、MA label 2 级；另含 Inspector 的 label↔GameObject 名绑定、Unity 序列化转义规则（`\xNN` / `\uNNNN`）、批量改名的数组索引陷阱（第 N 格 → `costumes.Array.data[N-1]`）与安全写入 5 步。结论已按上游源码逐条复核。
+
+### Changed
+- **知识根目录版本号对齐**：`memoryV5.0.0/` → `memoryV5.0.2/`（README 与包内发布说明同步；历史版本条目保留原目录名，不回溯改写）。
+- **索引同步**：`entities/avatar/index.md`（MOC 入口、核心文档表、子域表、frontmatter related；版本 1.10 → 1.11）与顶层 `index.md`（Avatar 域路由表、文件清单）登记新页。
+- **页数口径校正为实际值**：知识页 414 → 416（v5.0.0 报告后新增 1 页未计入），`entities/` 351 → 353，`entities/avatar/` 99 → 101，`FACT.md` Avatar 域 63 → 65 个文件。
+
+### Fixed
+- `menu-display-name-resolution.md` §2.2：Costume 级回退链「六级」更正为「七级」（与同节 ①–⑦ 表格及源码一致）。
+- `menu-display-name-resolution.md` `sources` 字段：源码路径 `Runtime/ObjHelper.Component.cs` 更正为 `Editor/Helper/ObjHelper.Component.cs`（上游该文件不在 Runtime 下）。
+- `menu-display-name-resolution.md` 挂入域索引与顶层路由，消除「合入后无法从 index 到达」的孤页风险（对应 C3 口径）。
+
+---
+
 ## [v5.0.0] - 2026-08-20 — LLMWikiPage 自包含知识发布包
 
 ### Added

@@ -26,7 +26,7 @@ related:
   - animator-system.md
 type: concept
 created: 2026-11-09
-sources: "lilxyzw/lilycalInventory Runtime/ObjHelper.Component.cs；nadena.dev/modular-avatar ModularAvatarMenuItem.cs 与 Editor/Inspector/Menu/MenuItemGUI.cs"
+sources: "lilxyzw/lilycalInventory Editor/Helper/ObjHelper.Component.cs；nadena.dev/modular-avatar ModularAvatarMenuItem.cs 与 Editor/Inspector/Menu/MenuItemGUI.cs"
 updated: 2026-11-09
 ---
 
@@ -77,7 +77,7 @@ gameObject.name
 
 ### 2.2 Costume 级：衣柜里每一套衣服
 
-同文件 `GetMenuName(this Costume costume, CostumeChanger changer)` 有**更长的六级回退链**：
+同文件 `GetMenuName(this Costume costume, CostumeChanger changer)` 有**更长的七级回退链**：
 
 | 优先级 | 取值来源 |
 |---|---|

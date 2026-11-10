@@ -11,6 +11,7 @@ confidence: High
 tags:
   - qa
   - navigation
+  - index
 aliases:
   - 查询归档
   - Queries

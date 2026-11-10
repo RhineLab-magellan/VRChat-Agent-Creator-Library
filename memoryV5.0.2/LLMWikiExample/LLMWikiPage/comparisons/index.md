@@ -11,6 +11,7 @@ confidence: High
 tags:
   - comparison
   - navigation
+  - misc
 aliases:
   - 对比分析
   - Comparisons

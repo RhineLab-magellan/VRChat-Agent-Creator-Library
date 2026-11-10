@@ -187,6 +187,7 @@ updated: 2026-08-13
 | 最佳化实操指南 | `entities/avatar/optimization-guide.md` |
 | **Modular Avatar** | `entities/avatar/modular-avatar.md` ← ⭐ VRChat改模必备插件(§0 速查 40 条 + §9 高级) |
 | **MA 组件教学卡** | `entities/avatar/ma-component-cards.md` ← ⭐ 28 个组件完整教学卡(含 Global Collider) |
+| **LI/MA 菜单显示名** | `entities/avatar/menu-display-name-resolution.md` ⭐NEW 2026-11-10 ← 显示名从哪来：组件级 2 级 / Costume 级 7 级 / MA label 2 级回退链 + 批量改名索引陷阱 |
 || **玩家本地相机工具** | `entities/avatar/camera-tools.md` ⭐NEW 2026-07-04 ← VirtualLens2 + VRCLens + 工具设计哲学对比 |
 || **VirtualLens2 子工具** | `entities/avatar/camera-tools-virtuallens2.md` ⭐NEW 2026-07-13 ← 安装/依赖/Remote/Drone/Focus/Non-Destructive 细节 |
 || **VRCLens 子工具** | `entities/avatar/camera-tools-vrclens.md` ⭐NEW 2026-07-13 ← Apply/原相机前提/HDR/White Balance/Invasive 细节 |
@@ -495,6 +496,7 @@ entities/avatar/
   optimization-guide.md        ← 最佳化实操指南
   avatar-modding-guide.md      ← Bike Pose 修复等改模知识
   modular-avatar.md            ← Modular Avatar 插件
+  menu-display-name-resolution.md ← ⭐NEW 2026-11-10 LI 衣柜/MA 菜单显示名回退链
   accessories.md               ← ⭐Avatar Accessories 配件系统(2026.2.1+) NEW 2026-06-30
   vrcraycast.md                ← ⭐VRCRaycast 骨骼 raycast(SDK 3.10.3+) NEW 2026-06-30
   camera-tools.md              ← ⭐NEW 2026-07-04 玩家本地相机工具 (VirtualLens2 + VRCLens)
