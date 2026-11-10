@@ -12,7 +12,7 @@
 
 - **新增** `entities/avatar/menu-display-name-resolution.md`：LI（lilycalInventory 1.5.2）与 MA（Modular Avatar 1.18.7）菜单显示名的来源与回退链（组件级 2 级 / Costume 级 7 级 / MA label 2 级），含 Inspector 绑定关系、Unity 序列化转义、批量改名的数组索引陷阱与安全写入流程。社区贡献 PR #5，结论已按上游源码逐条复核。
 - **索引同步**：新页登记进 `entities/avatar/index.md`（MOC / 核心文档表 / 子域表 / frontmatter related）与顶层 `index.md`（Avatar 域路由表 / 文件清单）。
-- **修正**：新页 §2.2 回退链「六级」→「七级」；`sources` 源码路径 `Runtime/ObjHelper.Component.cs` → `Editor/Helper/ObjHelper.Component.cs`；另将 `comparisons/index.md`、`queries/index.md` 的标签补足到协议下限（2 → 3）。
+- **修正**：新页 §2.2 回退链「六级」→「七级」；`sources` 字段与 §2.1 正文的 `Runtime/ObjHelper.Component.cs` → `Editor/Helper/ObjHelper.Component.cs`；另将 `comparisons/index.md`、`queries/index.md` 的标签补足到协议下限（2 → 3）。
 - **目录版号对齐**：知识根 `memoryV5.0.0/` → `memoryV5.0.2/`；页数口径校正为实际值 414 → 416。
 
 ## 就绪判定（本次发布前复算）

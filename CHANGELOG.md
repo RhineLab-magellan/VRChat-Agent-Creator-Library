@@ -24,7 +24,7 @@
 
 ### Fixed
 - `menu-display-name-resolution.md` §2.2：Costume 级回退链「六级」更正为「七级」（与同节 ①–⑦ 表格及源码一致）。
-- `menu-display-name-resolution.md` `sources` 字段：源码路径 `Runtime/ObjHelper.Component.cs` 更正为 `Editor/Helper/ObjHelper.Component.cs`（上游该文件不在 Runtime 下）。
+- `menu-display-name-resolution.md` 的 `sources` 字段与 §2.1 正文：源码路径 `Runtime/ObjHelper.Component.cs` 更正为 `Editor/Helper/ObjHelper.Component.cs`（上游该文件不在 Runtime 下）。
 - `menu-display-name-resolution.md` 挂入域索引与顶层路由，消除「合入后无法从 index 到达」的孤页风险（对应 C3 口径）。
 
 ---
