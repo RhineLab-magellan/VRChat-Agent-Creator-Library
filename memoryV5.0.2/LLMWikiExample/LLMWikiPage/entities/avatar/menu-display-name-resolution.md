@@ -59,7 +59,7 @@ updated: 2026-11-09
 
 ### 2.1 组件级：MenuFolder / ItemToggler 等
 
-源码 `Runtime/ObjHelper.Component.cs` 的 `GetMenuName(this MenuBaseComponent)`：
+源码 `Editor/Helper/ObjHelper.Component.cs` 的 `GetMenuName(this MenuBaseComponent)`：
 
 ```csharp
 var name = component.menuName;
