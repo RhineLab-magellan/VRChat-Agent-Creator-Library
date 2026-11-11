@@ -1,271 +1,55 @@
-# 🧠 VRChat-Agent-Creator-Library
+# VRChat-Agent-Open-Memory-Library
 
-> **VRChat 专属 AI Agent 开放记忆库** — 一个自包含、机器可解析的 VRChat 多领域知识包，专为 RAG 与 AI Agent 设计。
+一套面向 VRChat 开发的中文知识库，以 **Markdown 页 + `[[wikilink]]` 内链**组织，可直接被阅读者翻阅，也可被检索型工具整库读入。
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version: v5.0.2](https://img.shields.io/badge/Version-v5.0.2-blue.svg)](CHANGELOG.md)
-[![Pages: 416](https://img.shields.io/badge/Pages-416-blue.svg)]()
-[![Frontmatter: 100%](https://img.shields.io/badge/Frontmatter-100%25-brightgreen.svg)]()
-[![Dead Links: 0](https://img.shields.io/badge/Dead_Links-0-brightgreen.svg)]()
-[![Language: 中文](https://img.shields.io/badge/Language-中文-red.svg)]()
-[![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
+本仓库只有**一个**知识库目录 `memoryV5.0.3/`：知识页全部在里面，外加一份发布说明。没有第二个版本的目录。
 
----
+## 目录结构
 
-## 📑 目录 (Table of Contents)
-
-- [⚡ 快速开始](#快速开始-quick-start)
-- [📖 项目简介](#项目简介-introduction)
-- [✨ 核心特性](#核心特性-features)
-- [📊 内容地图](#内容地图-content-map)
-- [🚀 使用指南](#使用指南-usage)
-- [🚧 工程红线速查](#工程红线速查-constraints)
-- [📐 核心概念](#核心概念-concepts)
-- [🤝 贡献指南](#贡献指南-contributing)
-- [📜 更新日志](#更新日志-changelog)
-- [📄 许可证](#许可证-license)
-
----
-
-## ⚡ 快速开始 (Quick Start)
-
-**只需要三步：**
-
-```bash
-# 1️⃣ 克隆仓库
-git clone https://github.com/RhineLab-magellan/VRChat-Agent-Creator-Library.git
-cd VRChat-Agent-Creator-Library
-
-# 2️⃣ 指定知识根（416 个 Markdown 知识页）
-#    memoryV5.0.2/LLMWikiExample/LLMWikiPage/
+```
+memoryV5.0.3/
+├── README-发布说明.md          发布说明（页数口径、排除项、复核表）
+└── LLMWikiExample/
+    └── LLMWikiPage/
+        ├── index.md            总入口
+        ├── _always-load.md     常驻加载页
+        ├── FACT.md             事实速查
+        ├── concepts/           hybrid · misc · patterns · rules
+        ├── entities/           api · avatar · platform · vrchatsdk · world
+        ├── comparisons/        横向对比页
+        ├── meta/               库自身的元信息
+        └── queries/            查询式入口
 ```
 
-**把它当成任何 Markdown 知识源使用即可**——每页自带 YAML 元数据，可读、可切块、可向量化：
+## 数量
 
-```python
-# 3️⃣ 示例：加载到 LangChain（示意，具体切块/嵌入按你的管线调整）
-from langchain.document_loaders import TextLoader
-
-# 知识根：LLMWikiPage/ 共 416 页；index.md 是路由入口（整目录请用 DirectoryLoader）
-loader = TextLoader("memoryV5.0.2/LLMWikiExample/LLMWikiPage/index.md")
-docs = loader.load()
-# ... 接你的 RAG / 向量化 / 检索代码
-```
-
-**或者用 Obsidian 直接打开**：`Open folder as Vault` → 选择 `memoryV5.0.2/LLMWikiExample/LLMWikiPage/`，图谱与内链立即可用。
-
-### 术语速查（首次见面，一句话解释）
-
-| 术语 | 是什么 |
-|---|---|
-| **LLMWikiPage** | 知识包内部的目录体系：`entities/`（实体域）·`concepts/`（概念域）·`comparisons/`·`queries/`·`meta/`，配合顶层 `index.md`（路由地图）/ `FACT.md`（结构树）/ `_always-load.md`（核心约束）。 |
-| **frontmatter** | 每页开头 `---` 包裹的 YAML 元数据块（标题/类型/标签/可信度等），机器可直接解析。 |
-| **[[wikilink]]** | 知识页之间的双向链接（Obsidian 语法），用于图谱浏览与检索。 |
-| **confidence** | 每页的可信度分级：`high`（官方验证）/ `medium`（多源交叉）/ `low`（推断，必须带来源与理由）。 |
-
----
-
-## 📖 项目简介 (Introduction)
-
-VRChat 创作者的知识高度碎片化——官方文档、SDK 源码、开源项目和社区经验散落在各处。本项目把这些问题沉淀为**结构化的 Markdown 知识库**：一个自包含、纯知识、可审计的知识发布包，让 **AI Agent 与人类创作者共用同一份权威知识**。
-
-- **给 AI Agent**：直接作为 RAG / 向量化的知识源，`tags`/`type`/`confidence` 元数据让检索更精准，`[[wikilink]]` 让跨页知识可追溯。
-- **给人类创作者**：作为 Obsidian 图谱打开的 Vault，从 `index.md` 路由到任意领域，从链接图看清知识拓扑。
-
-> 这是一个「**对外发布的知识包**」：纯知识内容，不携带任何个人路径与私人治理痕迹。
-
-> 📎 本库的 RAG 专项适配版位于独立仓库：[Magellan_AstrBot_knowledge_For_VRChat](https://github.com/RhineLab-magellan/Magellan_AstrBot_knowledge_For_VRChat)
-
----
-
-## ✨ 核心特性 (Features)
-
-- 📚 **416 个知识页**，覆盖 World、Avatar、API、Platform、VRChatSDK、Rules、Patterns、Hybrid 等 10+ 领域（约 3.96 MB）。
-- 🤖 **100% YAML frontmatter** — 任意页面可被机器解析，可直接喂给 RAG / 向量化管线。
-- 🔗 **0 死链** — 全库使用 `[[wikilink]]` + 相对链接 + `http(s)://` URL 互连，图谱全库可解析。
-- 🎯 **可信度分级** — 每页标注 `high / medium / low`，区分官方事实、社区共识与推断。
-- ✅ **发布就绪四指标（C1–C4）** — 自动化检查可复现：自包含 / 置信度 / Fact Index / 标签。
-- 🧩 **自包含** — 仅依赖库内链接与公开 URL，无硬编码本地路径，可整体迁移。
-
-> 📋 **质量佐证**：发布就绪的自动化检查与独立审查报告见仓库 [`reports/`](reports/)（[V5 独立审查报告](reports/V5独立审查报告-2026-08-20.md) · [发布检查报告](reports/发布检查报告-2026-08-20.md)），报告不随发布包分发。
-
----
-
-## 📊 内容地图 (Content Map)
-
-知识根 `LLMWikiPage/` 的物理目录即领域：
-
-```mermaid
-flowchart TD
-    ROOT["LLMWikiPage/ · 416 页"] --> IDX["index.md 路由地图"]
-    ROOT --> FACT["FACT.md 结构树"]
-    ROOT --> ALW["_always-load.md 核心约束"]
-    ROOT --> ENT["entities/ · 353 · 实体域"]
-    ROOT --> CON["concepts/ · 47 · 概念域"]
-    ROOT --> CMP["comparisons/ · 6 · 对比分析"]
-    ROOT --> QRY["queries/ · 1 · 问答归档"]
-    ROOT --> META["meta/ · 6 · 治理协议"]
-    ENT --> W["world 202 · Udon/网络/烘焙/组件"]
-    ENT --> A["avatar 101 · Animator/改模/Shader"]
-    ENT --> P1["api 19 · vrchatsdk 19 · platform 12"]
-    CON --> PT["patterns 21 · 设计模式"]
-    CON --> RL["rules 10 · 语言/网络/性能硬约束"]
-    CON --> HY["hybrid 12 · OSC/AudioLink/VCC"]
-    CON --> MI["misc 4 · 后处理/无障碍"]
-```
-
-| 域 | 页数 | 内容 |
+| 项 | 数量 | 数字怎么来的 |
 |---|---|---|
-| `entities/world/` | 202 | Udon 编程、网络同步、Persistence、Scene Components、示例、光照烘焙、工具 |
-| `entities/avatar/` | 101 | Animator、改模优化、Shader（lilToon / Poiyomi / ORL / Filamented / UnlitWF）、工具链 |
-| `entities/api/` | 19 | Networking / Persistence / Player / 动画 / 音频 / UI API 参考 |
-| `entities/vrchatsdk/` | 19 | VRChat HTTP API、WebSocket、数据模型 |
-| `entities/platform/` | 12 | Quest / Android、跨平台、Unity 工具链 |
-| `concepts/patterns/` | 21 | 同步 / 状态机 / 消息总线等设计模式 |
-| `concepts/rules/` | 10 | UdonSharp 语言限制 / 网络 / 性能 / VM 硬约束 |
-| `concepts/hybrid/` | 12 | OSC、AudioLink、VCC/ALCOM、桥接 |
-| `concepts/misc/` | 4 | 后处理、无障碍等 |
-| `comparisons/` | 6 | Poiyomi vs lilToon、FIL-ORL-Poiyomi Pro 等对比 |
-| `meta/` + 顶层 3 | 9 | 治理协议 + FACT / index / _always-load |
+| 本包文件合计 | 423 | 由具备 shell 的席位对 `memoryV5.0.3/` 树做递归文件计数，结果逐字引用；本说明的作者没有 shell，不自行推算这个数 |
+| 发布说明 | 1 | 位于包根，不计入知识页 |
+| 知识页（`*.md`，位于 `LLMWikiPage/` 下） | 422 | 423 − 1，与上一行同一次计数 |
 
-> 页数统计口径与各域内容随版本演进，详见 [CHANGELOG.md](CHANGELOG.md)。
+两页第三方工具参考页已按今日核对到的版本重新纳入本包（VRCFury `1.1454.0`，2026-11-11 发布；ndmf `1.14.8`，2026-08-29 发布），路径在 `memoryV5.0.3/LLMWikiExample/LLMWikiPage/entities/avatar/` 下。上表的 422 知识页与 423 文件合计即由此实测，不再按预计值表述。
 
----
+## 版本与日期
 
-## 🚀 使用指南 (Usage)
+本包版本目录为 `memoryV5.0.3`，发布日 2026-11-11。包内每一页涉及第三方工具版本时，版本与发布日期均在 2026-11-11 核对，此后不再声明任何更新的版本状态；读者若要确认「今天是否仍然如此」，需要自己回查该工具的发布记录。
 
-### 场景 1：RAG / 向量化（Ollama / LangChain / 任意切块管线）
+## 页数口径
 
-把 `memoryV5.0.2/LLMWikiExample/LLMWikiPage/` 作为知识根喂给切块管线：
+包内被写过 414、415、421、422 几个页数，发布说明里把这笔账算到了底：
 
-- 每页 frontmatter 提供 `tags` / `type` / `confidence`，可作为**检索标签**与**过滤条件**；
-- 链接为 `[[相对wikilink]]` 或 URL，可平滑拆分为跨页引用；
-- 建议按域（`entities/...`、`concepts/...`）分片加载，控制上下文规模。
+432 个归档文件 = 422 个发布知识页 + 0 个按裁定不随包发布的页 + 9 个内部策展审计文件 + 1 份发布说明。
 
-### 场景 2：AI Agent 代码工程（Cursor / Claude Code / Copilot 等）
+加减可以在十秒内重算。发布说明还给出了排除项的逐条理由、发布前在 422 页上重跑的核对表（3378 条 wikilink 全部在包内解析，回退 0 条，未解析 0 条），以及上一轮那处链接缺口已随两页重新纳入而关闭的记录。
 
-```yaml
-# AGENTS.md / CLAUDE.md / .cursorrules
-memory_root: memoryV5.0.2/LLMWikiExample/LLMWikiPage/
-boot_files:
-  - memoryV5.0.2/LLMWikiExample/LLMWikiPage/_always-load.md   # 跨域核心约束，每会话必载
-  - memoryV5.0.2/LLMWikiExample/LLMWikiPage/FACT.md           # 知识库结构树 + 长期事实
-```
+## 怎么读
 
-> 一致建议给 Agent 的通用策略：先附加 `_always-load.md`（核心约束）→ 再附加 `FACT.md`（结构）→ 按需用 `index.md` 路由到的具体域文件。上下文敏感时不要一次性载入全部 416 页。
+- 想快速进入：`memoryV5.0.3/LLMWikiExample/LLMWikiPage/index.md`。
+- 想按主题找：先看 `concepts/`（规律与模式）还是 `entities/`（具体组件与工具）。
+- 想横向比较：`comparisons/`。
+- 想知道哪些结论有官方出处、哪些只是社区经验：每页正文与置信度标注里写明；发布说明的「两处需要读准的地方」说明了「最新」二字在本库里的含义边界。
 
-### 场景 3：Obsidian / 直接阅读（人类）
+## 许可
 
-- **Obsidian**：把 `memoryV5.0.2/LLMWikiExample/LLMWikiPage/` 作为 Vault 打开，从 `index.md`（路由地图）开始，内链与图谱立即可用。
-- **直接阅读**：从 `index.md` 或 `FACT.md` 进入，按目录浏览。
-
-### 快速路由表
-
-> 以下路径均相对 `LLMWikiPage/` 根目录。
-
-| 我想做什么 | 从哪里开始 |
-|---|---|
-| 学习 Udon 编程 | `entities/world/udon/index.md` → `entities/world/udon/udonsharp/` |
-| 解决网络同步问题 | `concepts/rules/networking-rules.md` → `concepts/patterns/manual-sync-state.md` |
-| 优化 World 性能 | `concepts/rules/performance-rules.md` → `entities/world/performance-guide.md` |
-| Avatar 改模入门 | `entities/avatar/modular-avatar.md` → `entities/avatar/teaching-methodology.md` |
-| 选择 Avatar Shader | `entities/avatar/shader/index.md`（lilToon / Poiyomi / ORL / Filamented / UnlitWF 对比矩阵）|
-| Poiyomi shader 细节 | `entities/avatar/shader/poiyomi/index.md` + `comparisons/poiyomi-pro-vs-toon.md` |
-| 审查 UdonSharp 代码 | `concepts/rules/udonsharp-language-limits.md` → `concepts/rules/udonsharp-deep-pitfalls.md` |
-| 开发外部应用 | `entities/vrchatsdk/index.md` |
-| Quest 适配 | `entities/platform/android-development.md` |
-| 管理 VCC / ALCOM | `concepts/hybrid/vcc.md` → `concepts/hybrid/alcom.md` |
-| 查阅 API 签名 | `entities/api/` 目录 grep 关键词 |
-| OSC 协议 | `concepts/hybrid/osc-protocol.md` |
-
----
-
-## 🚧 工程红线速查 (Constraints)
-
-> World / Avatar 开发**绝对红线**，完整规范见库内 `_always-load.md` 与 `concepts/rules/`：
-
-| # | 约束 | 后果 |
-|---|---|---|
-| 1 | **只支持 BRP 渲染管线**（禁止 URP / HDRP） | 项目完全无法工作 |
-| 2 | Editor 脚本必须放在 `Editor` 文件夹内 | 跨平台构建失败 |
-| 3 | Unity 版本锁定 2022.3.22f1 LTS（SDK 3.5.0+） | 版本不兼容 |
-| 4 | 禁止 List / Dictionary / LINQ / lambda | Udon VM 不支持 |
-| 5 | 禁止 async/await / try-catch / coroutine | Udon VM 不支持 |
-| 6 | 非 Owner 禁止写入 UdonSynced 变量 | 同步数据被覆盖 |
-| 7 | Manual Sync 必须调 `RequestSerialization()` | 数据永不发送 |
-| 8 | `Update` 中禁止 `GetComponent` / `Find` | 严重性能问题 |
-| 9 | 同步 String / DisplayName 需特殊处理 | 带宽浪费 |
-| 10 | Enum 比较必须 cast 到 int | 装箱导致 GC |
-
----
-
-## 📐 核心概念 (Concepts)
-
-本库的机器可读性建立在三个规范之上（完整规范见 `meta/kb-protocol.md`）：
-
-### 1. YAML frontmatter（100% 覆盖）
-
-每页开头的元数据块，直接服务于 RAG 过滤与检索：
-
-```yaml
----
-title: 文档标题
-type: entity | concept | comparison | query | summary
-category: 域
-knowledge_level: applied | theoretical | reference
-status: active | draft | deprecated
-tags: [tag1, tag2]
-aliases: [别名1]
-related: ["[[关联页面]]"]
-source: 知识来源（URL / 文档名）
-source_type: official | community | inference
-confidence: high | medium | low
----
-```
-
-### 2. 可信度分级（confidence）
-
-| 级别 | 含义 | 占比参考 |
-|---|---|---|
-| `high` | 官方文档 / 官方源码 / 直接实验验证 | ~49% |
-| `medium` | 多源交叉一致 / 高质量社区结论 | ~50% |
-| `low` | 社区经验 / 推断，**必须带来源与理由** | ~1%（诚实标注）|
-
-### 3. 链接规范
-
-- `[[wikilink]]`：知识页间双向跳转（Obsidian 兼容）；
-- 相对 Markdown 链接：指向库内文件；
-- `http(s)://` URL：外部权威来源；
-- 严禁硬编码本地路径（示例路径一律参数化）。
-
----
-
-## 🤝 贡献指南 (Contributing)
-
-本库为 **AI Agent 优先 + 人类创作者共用** 的开源技术知识体系。贡献流程：
-
-1. 在 `Training data/` 打包上传 **原始知识文件**（官方文档 / 笔记 / QA / 工程资料）；
-2. 附上 **可信度标注**（high / medium / low，区分事实与推断）；
-3. 采用后由 **维护者二次审查 + 模型自审**，确定置信度后合入知识库。
-
-> 详细规范（frontmatter 格式、标签体系、链接规范、审查标准）见 **[CONTRIBUTING.md](CONTRIBUTING.md)**。
-
----
-
-## 📜 更新日志 (Changelog)
-
-最新发布 **v5.0.2** 的三大变化：
-
-- 🆕 **新增显示名机制专页** — `entities/avatar/menu-display-name-resolution.md`：LI 衣柜与 MA 菜单的显示名到底从哪来（组件级 2 级 / Costume 级 7 级 / MA label 2 级回退），以及批量改名时的数组索引陷阱与安全写入流程（社区贡献 PR #5，已按上游源码逐条复核）；
-- 🔗 **索引同步** — 新页登记进 Avatar 域索引（MOC / 核心文档表 / 子域表 / frontmatter related）与顶层路由（Avatar 域表 / 文件清单），保持「每页都能从 index.md 走到」；
-- 🗂️ **目录版本号对齐** — 知识根更名为 `memoryV5.0.2/`，页数口径校正为实际值（416 页 / Avatar 101 页 / entities 353 页）。
-
-> 📝 完整历史（v1–v4 及逐版本细节）见 **[CHANGELOG.md](CHANGELOG.md)**；每个正式版本也在 **GitHub Releases** 同步发布。
-
----
-
-## 📄 许可证 (License)
-
-本项目采用 [MIT License](LICENSE) 开源。
-
-**知识共享声明**：本库中的知识来源于 VRChat 官方文档、开源项目文档、社区公开讨论，以及作者的个人实践笔记。所有第三方知识均标注原始来源；如发现任何版权问题，请提交 Issue。
+见仓库根目录 `LICENSE`。
